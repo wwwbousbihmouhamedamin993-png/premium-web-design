@@ -1,0 +1,70 @@
+{
+  "app": "firebase",
+  "category": "backend",
+  "updatedAt": "2026-11-01T05:35:00Z",
+  "images": [
+    {
+      "file": "overview.webp",
+      "surface": "overview",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:30:00Z",
+      "note": "firebase.google.com homepage full-page at 1440px. Dark #1E1E1E canvas, flame wordmark nav, orange CTA. Sticky header repeats are a full-page-capture artifact, content genuine."
+    },
+    {
+      "file": "docs.webp",
+      "surface": "docs",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:31:00Z",
+      "note": "firebase.google.com/docs full-page at 1440px. White shell, #F1F3F4 chrome, amber Documentation heading, #1A73E8-family card links, search bar."
+    },
+    {
+      "file": "pricing.webp",
+      "surface": "pricing",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:33:00Z",
+      "note": "firebase.google.com/pricing full-page at 1440px. No-cost card fill sampled exactly #039BE5; pay-as-you-go navy #2E3B4D; alternating white/dark #1E1E1E sections."
+    },
+    {
+      "file": "dashboard.webp",
+      "surface": "dashboard",
+      "source": "https://firebase.google.com/docs (console imagery, deterministic fetch)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:05:00Z",
+      "note": "Firestore data viewer console UI: breadcrumb (cities > Springfield), collection sidebar in mono, blue ADD DOCUMENT/ACTION links, Delete collection menu. Row pitch sampled 34px."
+    },
+    {
+      "file": "product.webp",
+      "surface": "product",
+      "source": "https://firebase.google.com/docs (console imagery, deterministic fetch)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:05:00Z",
+      "note": "Firestore filter dialog: View by field / Add condition rows, mono query preview .collection(\"cities\"), disabled grey Apply. Dialog elevation and disabled-state evidence."
+    },
+    {
+      "file": "og.webp",
+      "surface": "og",
+      "source": "https://firebase.google.com/images/social.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:04:00Z",
+      "note": "Homepage og:image confirmed in HTML meta tags. Firebase wordmark + flame on dark #1E1E1E."
+    },
+    {
+      "file": "gh-preview.webp",
+      "surface": "gh-preview",
+      "source": "https://github.com/firebase (org page preview image)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:04:00Z",
+      "note": "GitHub org preview: flame logomark on black. Confirms logo gradient colours (yellow #FFC400, orange #FF9100, red #DD2C00)."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "Deterministic grep of five Firebase docs pages (remote-config, crashlytics, app-distribution, perfmon, analytics get-started) found no console-UI embeds; only /static/docs/projects/images/firebase-projects-hierarchy_projects-apps-resources.png, a diagram, rejected as not product UI.",
+    "All 7 captured images verified as Firebase brand or genuine console UI; none rejected for wrong product.",
+    "Console captures carry pre-2021 link-blue family (#039BE5 buckets); current Google-console standard #1A73E8 verified on the live docs capture and used as accent.action in DESIGN.md.",
+    "og.png and gh-preview.png sourced by a prior deterministic pass, re-verified and converted to webp in this pass."
+  ]
+}

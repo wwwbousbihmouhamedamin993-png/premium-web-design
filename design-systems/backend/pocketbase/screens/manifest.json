@@ -1,0 +1,55 @@
+{
+  "app": "pocketbase",
+  "category": "backend",
+  "updatedAt": "2026-11-01T17:40:00Z",
+  "images": [
+    {
+      "file": "og.png",
+      "surface": "og",
+      "source": "https://pocketbase.io/images/og.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T17:22:00Z",
+      "note": "Official og:image from pocketbase.io homepage head. PocketBase wordmark + PB mark + admin records-table mock on the brand light-blue canvas with contour pattern."
+    },
+    {
+      "file": "gh-preview.png",
+      "surface": "gh-preview",
+      "source": "https://repository-images.githubusercontent.com/510607652/b96335a4-cf19-40c3-b423-7d4be5009510",
+      "verified": true,
+      "verifiedAt": "2026-11-01T17:24:00Z",
+      "note": "GitHub repo social preview (pocketbase/pocketbase). Same official hero art, wider crop; wordmark, tagline and dashboard mock verified."
+    },
+    {
+      "file": "overview.png",
+      "surface": "overview",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T17:28:00Z",
+      "note": "pocketbase.io homepage captured live at 1440x900. Header, hero, feature pill, gopher mascot and the embedded live-demo dashboard (collections sidebar, records grid, chips, buttons). Pixel-sampled for spec grounding."
+    },
+    {
+      "file": "docs.png",
+      "surface": "docs",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T17:29:00Z",
+      "note": "pocketbase.io/docs Introduction captured live at 1440x900. Docs sidebar with active fill, warning callout wash, download tabs, inline code chips, mono route chips."
+    },
+    {
+      "file": "dashboard.jpg",
+      "surface": "dashboard",
+      "source": "https://github.com/pocketbase/pocketbase/discussions/7652",
+      "verified": true,
+      "verifiedAt": "2026-11-01T17:26:00Z",
+      "note": "Real admin dashboard screenshot from the official 0.37 UI discussion: records table with sidebar, record editor panel, datetime picker with blue segmented buttons, mono record id. User-redacted data pixels; UI chrome intact. Downscaled 3170px to 1580px wide."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "README banner (i.imgur.com/aCBbjKx.png) verified but rejected as duplicate: identical hero art to og.png, same surface.",
+    "Second discussion image (Delete rule accordion crop, 1434x318) verified as PocketBase UI but rejected as a low-information fragment already represented by dashboard.jpg.",
+    "pocketbase.io/docs ships no embedded screenshots (text-only docs); probing common /images/ paths returned 404s.",
+    "Third-party blog/tutorial screenshots were not harvested: current official surfaces (live demo, og art, official discussion) supersede them and older captures show the pre-0.23 blue-accent Vue UI, which would misrepresent the shipped monochrome design.",
+    "sharp unavailable in this environment, so captures stay png/jpg (validator-accepted) instead of webp; dashboard.jpg downscaled to 1580px via System.Drawing."
+  ]
+}

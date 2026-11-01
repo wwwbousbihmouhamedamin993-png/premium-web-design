@@ -1,0 +1,71 @@
+{
+  "app": "convex",
+  "category": "backend",
+  "updatedAt": "2026-11-01T04:20:00Z",
+  "images": [
+    {
+      "file": "og.png",
+      "surface": "og",
+      "source": "https://www.convex.dev/og-home.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:00:00Z",
+      "note": "Brand OG image: 'ALL GAS NO BREAKAGES' on cream graph paper with gas-stripe ribbon (yellow/orange/plum) and warm-ink footer band with white convex wordmark. 1200x630."
+    },
+    {
+      "file": "overview.png",
+      "surface": "overview",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:10:00Z",
+      "note": "convex.dev homepage hero at 1440x900: dark warm-ink hero (#281d1d), cream wordmark, retro stripe ribbon, AI Gateway yellow chip, npm/GitHub pills, cream trusted-by band, cookie card."
+    },
+    {
+      "file": "product.png",
+      "surface": "product",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:12:00Z",
+      "note": "convex.dev/realtime at 1440x900 ('Realtime, all the time') - the primary product-feature page; /product and /why-convex routes do not exist in the current nav. Cream paper canvas #f6eedb, plum cookie Accept button."
+    },
+    {
+      "file": "pricing.png",
+      "surface": "pricing",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:13:00Z",
+      "note": "convex.dev/pricing at 1440x900: 'Choose Your Plan' with pixel-art decorations, three plan cards, amber POPULAR chip, plum Accept button."
+    },
+    {
+      "file": "dashboard.webp",
+      "surface": "dashboard",
+      "source": "https://docs.convex.dev/screenshots/storybook/pages_project_deployment_data_light.webp",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:17:00Z",
+      "note": "Dashboard Data view: sidebar (Health/Data/Schema/Functions/Files/Schedules/Logs), tables list, mono document IDs, Filter & Sort, green Development (Cloud) pill. Downscaled 2048->1600w, 2x DPR."
+    },
+    {
+      "file": "docs.webp",
+      "surface": "docs",
+      "source": "https://docs.convex.dev/screenshots/storybook/pages_projects_light.webp",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:17:00Z",
+      "note": "Dashboard Projects view embedded in docs.convex.dev/dashboard: Home/Team Settings tabs, Projects/Deployments segmented control, Create Project + indigo Start Tutorial, project card. Downscaled 2048->1600w."
+    },
+    {
+      "file": "features.webp",
+      "surface": "features",
+      "source": "https://docs.convex.dev/screenshots/storybook/pages_project_deployment_logs_light.webp",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:17:00Z",
+      "note": "Deployment log stream (operator log feature surface; filed under 'features' as nearest canonical name): mono timestamps, ID chips, failure rows washed red, indigo Pause. Downscaled 2048->1600w."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "Rejected gh-preview: opengraph.githubassets.com card for get-convex/convex returns the generic GitHub octocat fallback (no repo social preview); GitHub API rate-limited (429) on retry.",
+    "Rejected extra verified docs screenshots (deployment-switcher light+dark command palette, deployment history, team settings) to honour one-file-per-surface naming; all were viewed and used as DESIGN.md evidence (dark switcher grounds section 10).",
+    "docs.convex.dev storybook screenshot family probed: only pages_projects_light, pages_project_deployment_data_light, pages_project_deployment_data_deployment_switcher_{light,dark}, pages_project_deployment_logs_light, pages_project_deployment_history_light, pages_team_settings_light resolve (200); all other guessed names 404.",
+    "Full-page screenshot of convex.dev abandoned: sticky header + scroll-jacking stitches the hero repeatedly in fullPage capture; viewport captures used instead.",
+    "Colour values in DESIGN.md are pixel-sampled from these verified captures (indigo #3f5294, green pill #cbf0b8/#0a602a, failure wash #fad4ca, cream #f6eedb, warm ink #2b1d1d, stripes #f3b01c/#ed3431/#8d2a76)."
+  ]
+}

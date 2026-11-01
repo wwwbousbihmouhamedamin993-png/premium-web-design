@@ -1,0 +1,89 @@
+{
+  "app": "cockroach",
+  "category": "backend",
+  "updatedAt": "2026-11-01T04:35:00Z",
+  "images": [
+    {
+      "file": "og.png",
+      "surface": "og",
+      "source": "browser-capture (https://www.cockroachlabs.com/ hero, 1440px viewport; site ships no og:image meta tag)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:12:00Z",
+      "note": "Continuum-era homepage hero: digital-black canvas, bio-green headline highlight, purple pill CTA, mono uppercase eyebrows and announcement ticker."
+    },
+    {
+      "file": "product.png",
+      "surface": "product",
+      "source": "browser-capture (https://www.cockroachlabs.com/product/continuum/ hero, 1440px viewport; /product/ redirects to /pricing/ in the 2026 site)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:24:00Z",
+      "note": "Continuum product hero: sci-fi-blue mono eyebrow, bio-green headline accent, deep-blue data card with Geist Mono numerals, purple pill CTA."
+    },
+    {
+      "file": "pricing.png",
+      "surface": "pricing",
+      "source": "browser-capture (https://www.cockroachlabs.com/pricing/ hero, 1440px viewport)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:18:00Z",
+      "note": "Pricing hero: deep-green plan cards, mono uppercase plan names in bio-green, Geist Mono vCPU-hour numerals, purple pill CTA, outlined mono-label secondary buttons."
+    },
+    {
+      "file": "docs.png",
+      "surface": "docs",
+      "source": "browser-capture (https://docs.cockroachlabs.com/docs/stable/ui-overview, 1440px viewport)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:32:00Z",
+      "note": "Mintlify-hosted docs (v26.4), DB Console Overview page: white canvas, purple primary CTA, purple active-nav states, blue info note. Cookie-consent dialog overlays part of the left sidebar in the capture."
+    },
+    {
+      "file": "dashboard.png",
+      "surface": "dashboard",
+      "source": "https://raw.githubusercontent.com/cockroachdb/docs/main/src/current/images/cockroachcloud/statements_page.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:31:00Z",
+      "note": "CockroachDB Cloud console Statements page (official docs screenshot, downscaled 2854px to 1600px): dense sortable SQL-activity table, mono SQL text, blue links, green READY badges, inline latency distribution bars."
+    },
+    {
+      "file": "features.png",
+      "surface": "features",
+      "source": "https://raw.githubusercontent.com/cockroachdb/docs/main/src/current/images/cockroachcloud/sessions-page.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:31:00Z",
+      "note": "CockroachDB Cloud console Sessions page (official docs screenshot, downscaled 2964px to 1600px): dense session-inspection table with mono statements, memory-usage numerals, row action menus."
+    },
+    {
+      "file": "overview.png",
+      "surface": "overview",
+      "source": "https://raw.githubusercontent.com/cockroachdb/docs/main/src/current/images/cockroachcloud/custom-metrics-chart.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:31:00Z",
+      "note": "CockroachDB Cloud console Metrics page, Custom chart tab (official docs screenshot, downscaled 1650px to 1600px): purple primary Add chart button, blue links and tab underline, blue time-series card on white canvas."
+    },
+    {
+      "file": "settings.png",
+      "surface": "settings",
+      "source": "https://raw.githubusercontent.com/cockroachdb/docs/main/src/current/images/cockroachcloud/settings-page.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:31:00Z",
+      "note": "CockroachDB Cloud organization settings (official docs screenshot, downscaled 1886px to 1600px): standard-density settings card on off-white canvas, blue active tab underline, red destructive Delete button."
+    },
+    {
+      "file": "gh-preview.jpg",
+      "surface": "gh-preview",
+      "source": "https://repository-images.githubusercontent.com/16563587/8aa10300-2d7a-11eb-8962-f5c14efaec80",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:04:00Z",
+      "note": "github.com/cockroachdb/cockroach social preview (JPEG served as PNG; renamed .jpg): Cockroach Labs wordmark and roach mark over digital-black with electric blue/purple aurora gradient."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "No og:image or twitter:image meta tag is shipped by www.cockroachlabs.com homepage, /product/continuum/, or /pricing/ as of 2026-11-01; the homepage hero browser capture fills the og surface.",
+    "https://www.cockroachlabs.com/product/ and /product/cockroachdb/ now 302-redirect to /pricing/; /product/continuum/ is the live product page captured instead.",
+    "Full-page capture of the homepage was discarded: the scroll-jacked pinned hero repeats nine times in fullPage mode, producing a 9708px artifact; replaced with a viewport hero capture.",
+    "v19.2 Admin UI screenshots in the docs repo were rejected as outdated (2019-era navy-blue UI that no longer matches current tokens).",
+    "docs.cockroachlabs.com CSS exposes only generic Mintlify default variables, not brand tokens, so the docs surface was spec'd from the capture rather than its stylesheet.",
+    "Docs capture retains the site's cookie-consent dialog over part of the sidebar; the page remains fully identifiable.",
+    "A current cluster-overview console screenshot is not published in the open docs repo (cockroachcloud image set covers statements, sessions, settings, metrics only)."
+  ]
+}

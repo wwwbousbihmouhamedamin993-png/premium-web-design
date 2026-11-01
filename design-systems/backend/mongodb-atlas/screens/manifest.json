@@ -1,0 +1,80 @@
+{
+  "app": "mongodb-atlas",
+  "category": "backend",
+  "updatedAt": "2026-11-01T04:52:45Z",
+  "images": [
+    {
+      "file": "overview.png",
+      "surface": "overview",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:52:45Z",
+      "note": "Atlas Database product page hero (mongodb.com/products/platform/atlas-database) at 1440px viewport. Dark #001E2B canvas, #00ED64 CTA, condensed uppercase display, signup card."
+    },
+    {
+      "file": "product.png",
+      "surface": "product",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:52:45Z",
+      "note": "Full-page capture of mongodb.com/products/platform (destination of mongodb.com/atlas redirect), 1424x6840. Dark hero, ivory #FDFFF5 body sections, solution cards."
+    },
+    {
+      "file": "pricing.png",
+      "surface": "pricing",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:52:45Z",
+      "note": "mongodb.com/pricing landing state: dark hero, Atlas Core plan comparison (Free/Flex/Dedicated), RECOMMENDED pill, green active tab underline."
+    },
+    {
+      "file": "dashboard.png",
+      "surface": "dashboard",
+      "source": "https://miro.medium.com/v2/resize:fit:1400/1*mLGlLxKsiZKYaNfaa_zdGw.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:52:45Z",
+      "note": "Atlas console Database Deployments view (light): #FFFFFF canvas, #F9FBFA sidebar, serif page title, #00684A primary Create button, yellow IP warning banner, FREE/SHARED wash pills, metric tiles with sparklines."
+    },
+    {
+      "file": "features.png",
+      "surface": "features",
+      "source": "https://miro.medium.com/v2/resize:fit:1400/1*N5EPAuRFAxiBUa6IN616DQ.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:52:45Z",
+      "note": "Atlas console Connect dialog: 3-step green stepper, Drivers/Compass/Shell/VSCode option rows with icon tiles, scrim over the deployments view."
+    },
+    {
+      "file": "docs.png",
+      "surface": "docs",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:52:45Z",
+      "note": "Atlas docs page 'Deploy a Free Cluster' (mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster) at 1440px: dark #001E2B docs shell, #112733 sidebar, green active tab, serif page title, Note callout with blue keyline, mono M0 chip."
+    },
+    {
+      "file": "og.png",
+      "surface": "og",
+      "source": "https://images.contentstack.io/v3/assets/blt7151619cb9560896/bltfe3bee7877352896/Meta_Generic.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:52:45Z",
+      "note": "Official og:image from mongodb.com/atlas homepage. Serif MongoDB logotype + leaf in #00ED64 on #001E2B with green grid motif. Downscaled 2400x1260 to 1600x840."
+    },
+    {
+      "file": "gh-preview.png",
+      "surface": "gh-preview",
+      "source": "https://avatars.githubusercontent.com/u/45120?s=280&v=4",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:52:45Z",
+      "note": "GitHub org (github.com/mongodb) preview avatar: leaf mark in #00ED64 on #001E2B."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "Rejected: Medium capture of MongoDB Compass desktop app (window chrome reads 'MongoDB Compass', not the Atlas console) - wrong product surface.",
+    "Rejected: 4 further Medium assets (m11-m14) - generic illustrations/architecture diagrams, not UI screenshots.",
+    "Rejected: one verified Atlas login page capture (account.mongodb.com auth screen) - all eight canonical surface names already occupied; not shipped.",
+    "mongodb.com docs article bodies render content client-side and the current Atlas tutorials embed no console screenshots; deterministic docs-image extraction yielded only nav icons and tracking pixels.",
+    "console captures sourced from a Medium Atlas walkthrough (medium.com/@hewage99sonali/exploring-mongodb-atlas-8323a672282c) - page is clearly about MongoDB Atlas; images downloaded at up to 1400px width.",
+    "Ladder rungs: 1 (sibling catalogs) missed per orchestrator; rung 2 supplied the token spec (github.com/mongodb/leafygreen-ui packages/palette + packages/tokens sources, fetched 2026-11-01); rung 3 browser captures + pixel sampling grounded surfaces."
+  ]
+}

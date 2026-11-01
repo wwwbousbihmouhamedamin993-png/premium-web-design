@@ -1,0 +1,157 @@
+{
+  "apps": [
+    {
+      "slug": "appwrite",
+      "category": "backend",
+      "path": "design-systems/backend/appwrite/DESIGN.md",
+      "posture": "restrained",
+      "mood": "vivid,precise,friendly",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "hairline-separation",
+        "single-accent-fill",
+        "chart-pair-magenta-teal",
+        "mono-identifiers",
+        "dense-logs"
+      ],
+      "updatedAt": "2026-11-01T03:56:29.821Z"
+    },
+    {
+      "slug": "cockroach",
+      "category": "backend",
+      "path": "design-systems/backend/cockroach/DESIGN.md",
+      "posture": "utilitarian",
+      "mood": "instrumental,dense,technical",
+      "density": "standard",
+      "theme": "light",
+      "patterns": [
+        "two-shells",
+        "wash-status",
+        "single-primary-fill",
+        "tabular-numerals",
+        "dense-tables"
+      ],
+      "updatedAt": "2026-11-01T03:56:29.921Z"
+    },
+    {
+      "slug": "convex",
+      "category": "backend",
+      "path": "design-systems/backend/convex/DESIGN.md",
+      "posture": "committed",
+      "mood": "warm,editorial,technical",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "cream-canvas",
+        "mono-identifiers",
+        "log-stream",
+        "environment-pill",
+        "surface-step-separation"
+      ],
+      "updatedAt": "2026-11-01T03:56:30.025Z"
+    },
+    {
+      "slug": "firebase",
+      "category": "backend",
+      "path": "design-systems/backend/firebase/DESIGN.md",
+      "posture": "utilitarian",
+      "mood": "material,amber,precise",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "material-shell",
+        "amber-brand",
+        "google-blue-action",
+        "dense-data",
+        "mono-identifiers"
+      ],
+      "updatedAt": "2026-11-01T05:06:06.231Z"
+    },
+    {
+      "slug": "hasura",
+      "category": "backend",
+      "path": "design-systems/backend/hasura/DESIGN.md",
+      "posture": "utilitarian",
+      "mood": "slate,technical,bright",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "slate-chrome",
+        "yellow-cta",
+        "teal-enterprise-accent",
+        "mono-code",
+        "dark-keylines"
+      ],
+      "updatedAt": "2026-11-01T05:06:06.337Z"
+    },
+    {
+      "slug": "mongodb-atlas",
+      "category": "backend",
+      "path": "design-systems/backend/mongodb-atlas/DESIGN.md",
+      "posture": "committed",
+      "mood": "vivid,confident,technical",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "two-regime-green",
+        "leafygreen-palette",
+        "serif-titles",
+        "dense-collections",
+        "mono-identifiers"
+      ],
+      "updatedAt": "2026-11-01T05:06:06.459Z"
+    },
+    {
+      "slug": "neon",
+      "category": "backend",
+      "path": "design-systems/backend/neon/DESIGN.md",
+      "posture": "committed",
+      "mood": "dark,neon,technical",
+      "density": "standard",
+      "theme": "dark",
+      "patterns": [
+        "dark-only",
+        "branch-visualization",
+        "surface-ramp",
+        "mono-identifiers",
+        "dense-tables"
+      ],
+      "updatedAt": "2026-11-01T17:18:52.909Z"
+    },
+    {
+      "slug": "planetscale",
+      "category": "backend",
+      "path": "design-systems/backend/planetscale/DESIGN.md",
+      "posture": "committed",
+      "mood": "mono-voice,confident,technical",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "surface-split",
+        "mono-identifiers",
+        "orange-cta-budget",
+        "dual-parity",
+        "dense-tables"
+      ],
+      "updatedAt": "2026-11-01T17:18:53.056Z"
+    },
+    {
+      "slug": "pocketbase",
+      "category": "backend",
+      "path": "design-systems/backend/pocketbase/DESIGN.md",
+      "posture": "utilitarian",
+      "mood": "compact,pragmatic,charcoal",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "monochrome-primary",
+        "plex-sans",
+        "dark-ramp",
+        "records-table",
+        "dense-logs"
+      ],
+      "updatedAt": "2026-11-01T17:18:53.188Z"
+    }
+  ]
+}

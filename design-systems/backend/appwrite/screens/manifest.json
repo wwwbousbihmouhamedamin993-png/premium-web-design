@@ -1,0 +1,73 @@
+{
+  "app": "appwrite",
+  "category": "backend",
+  "updatedAt": "2026-11-01T05:05:00Z",
+  "images": [
+    {
+      "file": "overview.webp",
+      "surface": "overview",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:02:00Z",
+      "note": "appwrite.io homepage at 1440x900, dark poster canvas, pink gradient headline 'The open-source cloud for agents & devs', pink Start project CTA, embedded console hero"
+    },
+    {
+      "file": "product.webp",
+      "surface": "product",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:03:00Z",
+      "note": "appwrite.io/products/auth at 1440x900, Auth product page with auth-UI mock and pink Send magic link / Start building buttons"
+    },
+    {
+      "file": "pricing.webp",
+      "surface": "pricing",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:03:30Z",
+      "note": "appwrite.io/pricing at 1440x900 scrolled to Dedicated compute tiers table, right-aligned prices, dark surface"
+    },
+    {
+      "file": "docs.webp",
+      "surface": "docs",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:04:00Z",
+      "note": "appwrite.io/docs/products/auth at 1440x900, docs sidebar + Authentication overview cards on dark canvas"
+    },
+    {
+      "file": "dashboard.webp",
+      "surface": "dashboard",
+      "source": "https://appwrite.io/images/heroes/console-app-light.avif?v=20260729",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:55:00Z",
+      "note": "Official console hero from appwrite.io homepage (AVIF decoded to webp, downscaled 1920 to 1600w): light console overview with usage strip, pink progress bar and Add app CTA, magenta/teal chart pair, mono project-ID chips"
+    },
+    {
+      "file": "og.webp",
+      "surface": "og",
+      "source": "https://appwrite.io/og/image.png?title=The+open-source+cloud+for+developers+and+agents&subtitle=Auth%2C+Databases%2C+Storage%2C+Functions%2C+Messaging%2C+and+Sites+in+one+open-source+platform.&eyebrow=Appwrite",
+      "verified": true,
+      "verifiedAt": "2026-11-01T04:40:00Z",
+      "note": "Official og:image from appwrite.io homepage meta, dark card with pink wordmark and terminal-underscore motif"
+    },
+    {
+      "file": "gh-preview.webp",
+      "surface": "gh-preview",
+      "source": "https://opengraph.githubassets.com/5003639ae78ef9e95931cd1c700ec4fc905ee9d8004e87dee41fe3ada99028fd/appwrite/appwrite",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:05:30Z",
+      "note": "GitHub social preview of appwrite/appwrite, white card with repo name and pink logo tile on dark squircle"
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "Rung 1 (sibling libraries): no appwrite spec existed in the marketing or mobile sibling catalogs (orchestrator note).",
+    "Rung 2 hit: official rebrand post 'Meet the new Appwrite' (no hex in prose) plus the shipped token CSS served from cdn.appwrite.io, which contains the console's full light/dark/legacy theme blocks (--background #ffffff / #19191c, --primary #f02e65 legacy, --brand-cta #fd366e, --chart-brand #cd0071 / #e80080, fonts Aeonik Pro + Inter).",
+    "Full-page captures of marketing and docs pages were discarded: scroll-pinned animations duplicate each section 6-8 times in fullPage mode; all four pages were re-captured as 1440x900 viewport shots.",
+    "dashboard-dark.avif variant decoded and verified as Appwrite but deleted: the dashboard surface is already filled by the light console hero (one file per surface rule).",
+    "docs.appwrite.io no longer resolves (ERR_NAME_NOT_RESOLVED); documentation now lives at appwrite.io/docs.",
+    "Docs pages embed no product-screenshot images (icons only), so the docs surface is a direct page capture rather than a downloaded asset.",
+    "Two deterministic-fetch probes 404'd (PNG/WebP/JPG variants of hero AVIFs) and curl cannot reach docs.appwrite.io (connection refused), both noted as exhausted paths."
+  ]
+}

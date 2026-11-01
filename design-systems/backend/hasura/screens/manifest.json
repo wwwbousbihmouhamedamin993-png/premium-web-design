@@ -1,0 +1,81 @@
+{
+  "app": "hasura",
+  "category": "backend",
+  "updatedAt": "2026-11-01T06:00:00Z",
+  "images": [
+    {
+      "file": "og.webp",
+      "surface": "og",
+      "source": "https://res.cloudinary.com/dh8fp23nd/image/upload/v1744818533/v4-homepage/hasura-og_v3twqt.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:15:00Z",
+      "note": "Official hasura.io og:image. Classic-brand lockup: navy Hasura wordmark + horned-circle logo on white, 'Hasura GraphQL Engine — Instant Realtime GraphQL on Postgres'. Downscaled 1920x1080 to 1600x900 webp."
+    },
+    {
+      "file": "gh-preview.webp",
+      "surface": "gh-preview",
+      "source": "https://repository-images.githubusercontent.com/137724480/601f6f00-936a-11e9-8f46-263945af47dc",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:15:00Z",
+      "note": "github.com/hasura/graphql-engine social preview. Current-brand era: near-black canvas, white wordmark, 'Reliable AI on your data.' with lime gradient tube. Downscaled 2560x1280 to 1600x800 webp."
+    },
+    {
+      "file": "overview.webp",
+      "surface": "overview",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:45:00Z",
+      "note": "hasura.io homepage hero at 1440x900. White canvas, mono uppercase eyebrow, Funnel Display headline, PromptQL/Hasura gradient product cards. Full-page capture disabled by the page's marquee animation; fold capture used."
+    },
+    {
+      "file": "product.webp",
+      "surface": "product",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:48:00Z",
+      "note": "hasura.io/ddn product page hero at 1440x900. Blue Hasura DDN sub-brand logo, blue primary CTAs, dark pill announcement banner with lime link text."
+    },
+    {
+      "file": "pricing.webp",
+      "surface": "pricing",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:52:00Z",
+      "note": "hasura.io/pricing hero at 1440x900. 'Hasura DDN Pricing', three plan cards (DDN Free / Base / Advanced) with blue prices, uppercase labels, pill plan badges."
+    },
+    {
+      "file": "dashboard.webp",
+      "surface": "dashboard",
+      "source": "https://hasura.io/docs/2.0/assets/images/connect-db-console-d08a940e3d5f1f710ba1c83383920b77.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:25:00Z",
+      "note": "Official docs screenshot of the open-source console v2.16.1: slate top bar with yellow active API tab, request-headers table, GraphiQL explorer with toolbar tabs. Grounds chrome/accent colours sampled in DESIGN.md."
+    },
+    {
+      "file": "features.webp",
+      "surface": "features",
+      "source": "https://hasura.io/docs/2.0/assets/images/create-profile-table-f93963eda2987dc06c5d2a9377a37f8a.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:25:00Z",
+      "note": "Official docs screenshot of console v2.13.0-cloud.1 Data Manager: sub-sidebar with pale-amber active section, Add-a-New-Table form, yellow 'Add Table' primary CTA, uppercase section micro-labels."
+    },
+    {
+      "file": "docs.webp",
+      "surface": "docs",
+      "source": "https://hasura.io/docs/2.0/assets/images/profile-query-5be8a917069f505b215cbf87ea953dfd.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T05:25:00Z",
+      "note": "Official docs screenshot of the API Explorer: GraphiQL editor, response JSON panel with tabular response-time/size stats (348 ms, 184 bytes), masked admin secret row."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "Ladder rung 1 (sibling library) was missed per orchestrator: no existing spec for hasura in sibling catalogs.",
+    "Ladder rung 2 executed: official open-source console theme source (frontend/libs/console/legacy-ce/src/lib/theme/variables.scss, components/Main/Main.module.scss, frontend/libs/shared/ui/src/theme/theme.css on github.com/hasura/graphql-engine, accessed 2026-11-01) plus hasura.io homepage + compiled Next.js CSS for the 2026 brand layer.",
+    "Ladder rung 3 executed: three official docs console screenshots + three 1440px browser captures of hasura.io home/DDN/pricing + two deterministic social images.",
+    "Full-page browser capture was abandoned for hasura.io: the homepage runs a marquee/transform animation that breaks scroll-stitching (produced a corrupted double-exposed image, rejected and deleted). Clean fold captures used instead.",
+    "cloud.hasura.io console (DDN dashboard) requires authentication; no unauthenticated screenshot available, so console surfaces are grounded by official docs screenshots of the open-source console.",
+    "An early docs fetch returned a page with no usable images (hasura.io/docs latest landing); images were pulled from the /docs/2.0 getting-started guide instead.",
+    "The teal/cyan hint was only partially accurate: verified console accents are Hasura yellow #FEC53D/#FFC627 (primary action + active indicator), teal #1CD3C6 and cyan #33E0FF (enterprise-tier accents), and slate-indigo #314158 (modern control fill). The 2026 marketing brand accent is lime #B6FC34 with blue #3970FD on near-black #000615."
+  ]
+}

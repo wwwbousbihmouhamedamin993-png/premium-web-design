@@ -1,0 +1,79 @@
+{
+  "app": "planetscale",
+  "category": "backend",
+  "updatedAt": "2026-11-01T17:14:16Z",
+  "images": [
+    {
+      "file": "og.webp",
+      "surface": "og",
+      "source": "https://planetscale.com/assets/homepage-social-Yera6DPM.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T17:14:16Z",
+      "note": "Official homepage og:image. Dark social card: PlanetScale wordmark + planet logo, mono caps tagline, customer logo grid. Downscaled 2400->1600, converted to webp."
+    },
+    {
+      "file": "gh-preview.webp",
+      "surface": "gh-preview",
+      "source": "https://opengraph.githubassets.com/4ce0cb74d8df00d9863e8314e0a34ec27e9c086d222f0f7a241f039a61dc4357/planetscale/planetscale-go",
+      "verified": true,
+      "verifiedAt": "2026-11-01T17:14:16Z",
+      "note": "GitHub repo social preview for planetscale/planetscale-go with PlanetScale logo mark."
+    },
+    {
+      "file": "overview.webp",
+      "surface": "overview",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T17:14:16Z",
+      "note": "planetscale.com homepage hero at 1440px. Confirms 2026 dark marketing theme: #111111 canvas, amber #fbca00 announcement band, mono type, orange CTA 'Get in touch', blue links, hairline logo grid."
+    },
+    {
+      "file": "product.webp",
+      "surface": "product",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T17:14:16Z",
+      "note": "planetscale.com/vitess at 1440px. Orange filled CTA 'Get managed Vitess', orange accent bar before headline, hairline-bordered feature grid, blue inline links."
+    },
+    {
+      "file": "pricing.webp",
+      "surface": "pricing",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T17:14:16Z",
+      "note": "planetscale.com/pricing at 1440px. Pricing configurator with blue-bordered agent-pricing callout, checkbox engine picker, orange NEW tag on Neki."
+    },
+    {
+      "file": "dashboard.webp",
+      "surface": "dashboard",
+      "source": "https://planetscale.com/assets-2024/blog/content/our-new-database-overview-page/primary-database.jpg",
+      "verified": true,
+      "verifiedAt": "2026-11-01T17:14:16Z",
+      "note": "Dark database overview page from PlanetScale's official blog: cluster topology (load balancers -> primary -> replicas), blue donut gauges, stat tiles, 'New branch' light pill on #111111 canvas with #1a1a1a panels. Downscaled 2000->1600."
+    },
+    {
+      "file": "features.webp",
+      "surface": "features",
+      "source": "https://mintcdn.com/planetscale-2/AJPY38bILe2zenXX/images/assets/docs/tutorials/deploy-to-vercel/prisma.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T17:14:16Z",
+      "note": "Connect dialog 'Select your language or framework' from official docs: dark radio-card grid, blue border on selected card, PlanetScale CLI option. Downscaled 3058->1600."
+    },
+    {
+      "file": "docs.webp",
+      "surface": "docs",
+      "source": "https://mintcdn.com/planetscale-2/pncBnOWnwAfGxG1f/images/assets/docs/concepts/branching/deploy-request-page.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T17:14:16Z",
+      "note": "Light deploy-request page from official branching docs: tab rail with blue active underline, schema diff with red drop-table lines, Created/Altered/Dropped stat tiles, charcoal 'Create deploy request' button, mono branch/table identifiers. Downscaled 3428->1600."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "All 8 images verified by viewing: PlanetScale wordmark, product name, or console UI matching app.planetscale.com present in each.",
+    "Consolidated to one file per surface per naming rule: five additional verified dark-dashboard captures (shards drawer, shard detail, metrics drawer, read-only regions, load-balancer metrics) duplicated the dashboard surface; one verified light branches-table capture duplicated the docs surface. Dropped after verification.",
+    "opengraph.githubassets.com rate-limited the first deterministic attempt; retried with the exact og:image URL from the repo page HTML.",
+    "Full-page homepage capture repeated the pinned hero (scroll-animation artifact); replaced with a clean 1440px viewport capture.",
+    "Browser captures taken with the in-app browser at 1440x900; marketing pages rendered in dark mode by default (theme-color #111111), matching the og card."
+  ]
+}
