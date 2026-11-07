@@ -1,0 +1,70 @@
+{
+  "app": "digitalocean",
+  "category": "cloud",
+  "updatedAt": "2026-11-01T23:42:00",
+  "images": [
+    {
+      "file": "overview.png",
+      "surface": "overview",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:36:00",
+      "note": "digitalocean.com homepage at 1440px viewport; DigitalOcean wordmark + logo, dark header, teal CTA pill, ocean-gradient hero (kraken-v2 brand layer). Cookie banner visible at capture time."
+    },
+    {
+      "file": "pricing.png",
+      "surface": "pricing",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:38:00",
+      "note": "digitalocean.com/pricing at 1440px viewport after dismissing cookie banner; wordmark, cyan Get Started pill, teal announcement bar."
+    },
+    {
+      "file": "dashboard.png",
+      "surface": "dashboard",
+      "source": "https://docs.digitalocean.com/screenshots/droplets/create/choose-droplet-configuration.e60d1527fae5839a12a13968cc970e66893d98e009adf454579c522d516c2eaf.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:30:00",
+      "note": "Official docs-hosted console screenshot: Create Droplet plan picker - radio cards, blue #0069ff-family selected state, price rows."
+    },
+    {
+      "file": "features.png",
+      "surface": "features",
+      "source": "https://docs.digitalocean.com/screenshots/droplets/create/choose-size.2bb1a24cfb9c6a0a0328335fc2a0edc57f870e55ea3e2d04aa2bb18b9e742dd9.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:30:00",
+      "note": "Official docs-hosted console screenshot: v5 droplet configuration - sliders with hourly/per-unit pricing in blue."
+    },
+    {
+      "file": "product.png",
+      "surface": "product",
+      "source": "https://docs.digitalocean.com/screenshots/app-platform/app-config-options.12ca98dc05f39b05fb91849e9fe38d3c116fc66f9aa1a1c19c2b4819afc5bc3c.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:30:00",
+      "note": "Official docs-hosted console screenshot: App Platform resource config panel (Info/Size/Deployment/Network sections with Edit links). Downscaled 1896px to 1600px."
+    },
+    {
+      "file": "docs.png",
+      "surface": "docs",
+      "source": "https://docs.digitalocean.com/screenshots/droplets/creation-complete.5eb44d67135583a21f3b5c162e1edcf8f33a28f312127dbf4e9dd4cc7a71dfe2.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:30:00",
+      "note": "Official docs-hosted console screenshot: droplet list row (Name/IP Address/Created/Tags columns, tag pill, kebab menu) - dense data-row reference."
+    },
+    {
+      "file": "gh-preview.png",
+      "surface": "gh-preview",
+      "source": "https://avatars.githubusercontent.com/u/4650108?v=4",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:28:00",
+      "note": "github.com/digitalocean verified org avatar: shark mascot on dark navy - brand identity confirmed."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "og surface not captured: www.digitalocean.com homepage and /products/droplets server HTML ship no og:image or twitter:image content (twitter:card=summary with no image) - og:image is injected client-side at best.",
+    "Kubernetes docs page fetched (create-via-web) contained no console screenshots at that URL; droplets and app-platform docs supplied sufficient verified control-panel imagery.",
+    "Console login page (cloud.digitalocean.com) is a JS-only shell with no inline brand CSS; console UI grounded from official docs-hosted screenshots instead.",
+    "All 7 images visually verified with the Read tool: wordmark/logo/product-name/control-panel UI present; nothing ambiguous or wrong-product rejected after download (2 candidates per surface were already disambiguated by official docs paths)."
+  ]
+}

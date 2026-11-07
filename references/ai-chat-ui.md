@@ -31,6 +31,16 @@ has implicit `aria-live="polite"` and implicit `aria-atomic="true"`, and authors
 element with `role="status"` does not receive focus as a result of change in status" (WAI-ARIA 1.3) — so
 render the message, then update a single persistent status element's text.
 
+**Streaming layout stability (zero CLS under the cursor).** Token streaming must never shift interactive
+controls while the user is reading or aiming a click. Enforce three DOM mechanics: **1.** Set CSS scroll
+anchoring explicitly (`overflow-anchor: auto` on the scrolling transcript container; `overflow-anchor:
+none` on dynamic suggestion trays and floating toolbars so browser scroll-anchoring heuristics do not
+jump the viewport). **2.** Pre-allocate `min-height` on incoming tool-call rows, code blocks, and
+artifact cards as soon as `content_block_start` arrives so streaming deltas expand within a reserved
+frame. **3.** Decouple dynamic follow-up suggestion chips from the active document flow (render them in a
+reserved footer slot or reveal only after `message_stop`) so late-arriving tokens never push a clickable
+chip out from under the pointer.
+
 ## The message/thread model
 
 Three layers, because they have different lifetimes. **1.** A **thread** is a named conversation, own
@@ -92,10 +102,21 @@ will have their own UI icons" — so "regenerate" gets a regenerate icon.
 
 One row per tool call, **named for a human** — "Read 3 rows from `invoices`", not "calling `query_db`".
 Show the **actual arguments**, collapsible, visible without devtools. Distinguish **read from write**
-visually, and give writes a confirm step. When the agent needs approval it **blocks on the user** with
-explicit Approve / Reject, never a timeout. Render partial tool input as "preparing…" — never stream raw
-JSON. On completion, summarise **what changed** in product terms with links to the objects. On failure,
-name which step failed and whether prior steps were rolled back.
+visually, and split writes by blast radius:
+- **Destructive or external writes** (deleting records, sending emails, billing mutations, production
+  deploys) **block on the user** before execution with explicit Approve / Reject, never a timeout.
+- **Reversible workspace mutations** (updating fields, applying filters, drafting blocks, tagging rows)
+  execute immediately and emit a persistent inline **Reversible Action Bar** attached to the turn
+  (`"Updated 4 records · [Undo] [View diff]"`), keeping the human in control without modal approval
+  fatigue.
+- **Ephemeral JIT control dissolution.** When an agent step spawns transient inline parameter controls
+  (date pickers, schema mappers, confirmation sliders) inside the transcript, dissolve them into a
+  compact read-only provenance receipt (`"Filtered to Q3 · 42 rows"`) once committed so historical
+  turns do not accumulate dead interactive chrome.
+
+Render partial tool input as "preparing…" — never stream raw JSON. On completion, summarise **what
+changed** in product terms with links to the objects. On failure, name which step failed and whether
+prior steps were rolled back.
 
 The wire model supports this precisely. Anthropic streams tool input as **partial JSON strings** — "The
 deltas for `tool_use` content blocks correspond to updates for the `input` field of the block… the deltas
@@ -143,6 +164,12 @@ Errors go **inline in the transcript**, adjacent to the failed turn, with that t
 reachable. A toast cannot host a retry someone may need in thirty seconds, and `toasts-notifications.md`
 routes errors to persistent surfaces.
 
+**No affective mascot wrappers.** Never mask model latency, uncertainty, or tool failures behind cute 3D
+avatars, blinking anthropomorphic eyes, or apologetic first-person personality wrappers ("Oops! My brain
+got tangled"). In B2B product UI, affective mascots erode operator trust precisely when stakes are
+highest; surface **mechanical state** instead — which tool step is running, elapsed time, exact failure
+reason, rollback status, and a direct Retry / Undo control.
+
 **Not found:** no primary source consulted specifies a required first-token latency budget, a
 streaming chunk-size minimum, or a maximum transcript length before compaction. Settle those in
 `DESIGN.md`.
@@ -155,3 +182,4 @@ streaming chunk-size minimum, or a maximum transcript length before compaction. 
 - [WAI-ARIA 1.3 — `status` role](https://www.w3.org/TR/wai-aria-1.3/#status) — W3C Working Draft, accessed 2026-10-05
 - [Understanding SC 4.1.3 Status Messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html) — W3C WCAG 2.2, accessed 2026-10-05
 - [Using the HTML Sanitizer API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Sanitizer_API/Using_the_HTML_Sanitizer_API) — MDN, accessed 2026-10-05
+- [CSS Scroll Anchoring (`overflow-anchor`)](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-anchor) — MDN, accessed 2026-10-05

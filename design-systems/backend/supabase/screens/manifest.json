@@ -1,0 +1,79 @@
+{
+  "app": "supabase",
+  "category": "backend",
+  "updatedAt": "2026-11-01T21:00:00Z",
+  "images": [
+    {
+      "file": "og.png",
+      "surface": "og",
+      "source": "https://supabase.com/images/og/supabase-og.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:35:00Z",
+      "note": "Homepage og image: Supabase wordmark + bolt logo on near-black, 'Build in a weekend' white / 'Scale to millions' brand green. Confirms hero two-tone recipe and marketing canvas."
+    },
+    {
+      "file": "gh-preview.png",
+      "surface": "gh-preview",
+      "source": "https://repository-images.githubusercontent.com/214587193/00f59f00-90a6-11eb-8764-f49e3f731458",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:35:00Z",
+      "note": "supabase/supabase repo social preview: bolt logo on dark rounded square, repo stats. Light background strip confirms dual-brand usage."
+    },
+    {
+      "file": "overview.png",
+      "surface": "overview",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:52:00Z",
+      "note": "supabase.com homepage hero at 1440px viewport: nav (GitHub stars pill, Sign in, green Start your project), two-tone headline, green primary + ghost secondary buttons, product cards with dark illustration areas."
+    },
+    {
+      "file": "pricing.png",
+      "surface": "pricing",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:55:00Z",
+      "note": "supabase.com/pricing at 1440px viewport: FREE/PRO/TEAM/ENTERPRISE cards, monospaced price numerals ($0/$25/$599/Custom), deep-green plan CTAs, 'Most Popular' badge, checkmark feature lists."
+    },
+    {
+      "file": "dashboard.png",
+      "surface": "dashboard",
+      "source": "https://supabase.com/docs/img/database/orioledb-creating-project.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:44:00Z",
+      "note": "Studio dark mode 'Create a new project' form: hairline-separated label/control rows, uppercase mono section eyebrows, amber warning admonition, green focus ring on Region select, green Create new project CTA, Cancel ghost button."
+    },
+    {
+      "file": "features.png",
+      "surface": "features",
+      "source": "https://supabase.com/docs/img/database/pool-size.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:45:00Z",
+      "note": "Studio dark mode 'Connection pooling configuration' panel with Supavisor badge, info admonition, red underline on changed field label, green Save + ghost Cancel footer bar. Downscaled 2026px to 1600px."
+    },
+    {
+      "file": "docs.png",
+      "surface": "docs",
+      "source": "https://supabase.com/docs/img/database/database-settings-host.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:46:00Z",
+      "note": "Studio light mode database settings (Transaction/Session pooler) from docs: near-white canvas, mono connection strings, 'Shared Pooler' pill badges, green check icons, orange warning icon. Downscaled 2050px to 1600px."
+    },
+    {
+      "file": "product.png",
+      "surface": "product",
+      "source": "https://supabase.com/images/index/products/database-dark.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:41:00Z",
+      "note": "Homepage Postgres Database product panel art: Postgres elephant mark in dark ink on solid brand green (#3ECF8E family) — the one sanctioned large brand-color surface on the marketing site."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "Rejected: docs/managing-tables creating-tables.png, joining-tables.png, schemas.png — Supabase docs illustration diagrams (mono labels + amber accent), not product UI screenshots.",
+    "Rejected: browser capture of supabase.com/products — path returns the site 404 page (product hub lives under the nav dropdown, e.g. /products/database).",
+    "Full-page captures of supabase.com and /pricing unusable: scroll-driven sticky sections duplicate the hero during full-page capture; replaced with clean 1440px viewport captures.",
+    "supabase.com/dashboard requires an authenticated project, so live dashboard capture was not possible; Studio dark and light surfaces were sourced from first-party docs screenshots hosted on supabase.com and the supabase/supabase repo.",
+    "Homepage product visuals for Auth, Realtime, Vector, Edge Functions are SVG illustrations, not screenshots; only the database panel ships a PNG."
+  ]
+}

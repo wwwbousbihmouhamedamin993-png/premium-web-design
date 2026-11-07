@@ -1,0 +1,74 @@
+{
+  "app": "aws",
+  "category": "cloud",
+  "updatedAt": "2026-11-01T21:21:19Z",
+  "images": [
+    {
+      "file": "og.png",
+      "surface": "og",
+      "source": "https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/homepage/aws-20-lockup-white.c6b17e6d9c192d96a47cf163c129d26d67f67849.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T21:21:19Z",
+      "note": "aws.amazon.com homepage carries no og:image/twitter:image meta; substituted with the official homepage brand lockup asset (aws wordmark + smile arrow). Downscaled 4524x2224 -> 1600x787 via System.Drawing (no ImageMagick/sharp on host)."
+    },
+    {
+      "file": "gh-preview.png",
+      "surface": "gh-preview",
+      "source": "https://avatars.githubusercontent.com/u/2232217?s=280&v=4",
+      "verified": true,
+      "verifiedAt": "2026-11-01T21:21:19Z",
+      "note": "GitHub org og:image for github.com/aws; aws smile wordmark clearly visible."
+    },
+    {
+      "file": "overview.png",
+      "surface": "overview",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T21:21:19Z",
+      "note": "AWS sign-in page (entry surface reached via console.aws.amazon.com redirect) at 1440x900. Brand-verified: aws orange smile logo, Amazon Lightsail promo. Auth surface uses the brand orange primary button, not product blue."
+    },
+    {
+      "file": "pricing.png",
+      "surface": "pricing",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T21:21:19Z",
+      "note": "aws.amazon.com/ec2/pricing viewport capture at 1440x900. Brand-verified: aws logo in dark navy chrome bar, Amazon EC2 product nav, pricing content. Full-page capture attempted first but rejected (sticky nav repeated; lazy sections never rendered)."
+    },
+    {
+      "file": "product.png",
+      "surface": "product",
+      "source": "https://docs.aws.amazon.com/images/quickstarts/latest/s3backup/images/aws-console-s3.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T21:21:19Z",
+      "note": "AWS console home 'Shortcuts and Recently Viewed Services' + All AWS Services list with S3 highlighted. Legacy-generation console UI (pre-CloudScape visual refresh) - identity verified but tokens reflect an older design generation."
+    },
+    {
+      "file": "features.png",
+      "surface": "features",
+      "source": "https://docs.aws.amazon.com/images/quickstarts/latest/s3backup/images/aws-console-s3-categorized.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T21:21:19Z",
+      "note": "AWS console home 'Recommended For You' + Storage & Content Delivery services modal. Legacy-generation console UI (pre-CloudScape visual refresh)."
+    },
+    {
+      "file": "docs.png",
+      "surface": "docs",
+      "source": "https://docs.aws.amazon.com/lambda/latest/dg/images/log-stream.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T21:21:19Z",
+      "note": "CloudWatch Log streams table (Lambda docs tutorial screenshot, 2024-dated events). Current-generation console UI: checkbox table, filter bar, disabled-state Delete button, bordered action buttons, pagination - primary grounding image for the dense-table spec."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "Rejected: aws.amazon.com homepage hero illustration (d1.awsstatic.com cloud-capablilities-2.png) - abstract 3D artwork with no visible AWS brand identity, fails the brand-identity check.",
+    "Rejected: homepage interactive-cards hero m10y26-start-here.png - renders as colored placeholder blocks (no brand content).",
+    "Rejected: Lambda docs deploy-console.png (300x144) and test-event.png (300x102) - below usable resolution, ambiguous at size.",
+    "Rejected: S3 quickstart s3-create-bucket.png (500x300) - legacy-generation and too small to ground tokens.",
+    "Rejected: EC2 pricing full-page browser capture - sticky header repeated down the page and lazy sections never rendered; replaced with a clean 1440x900 viewport capture.",
+    "Console home (dashboard surface) not capturable: console.aws.amazon.com requires an authenticated session; sign-in page captured instead as the overview surface.",
+    "Ladder rungs attempted: 1 (deterministic og:image - absent on homepage; GH avatar + homepage brand assets used), 2 (browser captures of signin + EC2 pricing; console blocked by auth; docs images downloaded directly). Rung 3 not needed.",
+    "docs.aws.amazon.com marketing pages (aws.amazon.com, /console/ marketing page) embed no console UI screenshots; real console imagery came from docs/quickstart image paths."
+  ]
+}

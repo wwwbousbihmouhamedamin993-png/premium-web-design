@@ -181,6 +181,10 @@ on a free axis means you were not deciding.
   surface steps and hairlines. The one exception is a **declared** atmosphere moment under
   `atmosphere.md` — governed, rare, stage surfaces only, always carrying its static fallback.
   Undeclared glow is slop wherever it appears.
+- **Affective mascot wrappers masking AI latency or failure.** Cute 3D avatars, blinking anthropomorphic
+  eyes, or apologetic personality wrappers ("Oops! My brain got tangled") deflecting from model
+  latency, uncertainty, or tool errors. Surface mechanical state instead — which step is running,
+  elapsed time, what failed, rollback status, and a direct Retry / Undo control (`ai-chat-ui.md`).
 - **Card inflation.** Card → card → card; five layers of boxes around one paragraph; an icon in a
   rounded tile above every heading; a coloured stripe on every card. Cards are for repeated peer
   items and containment, not for every group of three lines. Group with whitespace, dividers, and

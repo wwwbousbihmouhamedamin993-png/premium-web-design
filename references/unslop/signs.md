@@ -9,6 +9,7 @@ Go through every group and note each sign you find with where it lives. Each lin
 - Purple to blue or violet to pink gradients on backgrounds, cards, buttons or the active nav item → one neutral surface, accent only where it means something
 - Gradient text in headings, numbers or the logo → solid primary text color
 - Colored glows, like `shadow-[0_0_20px_rgba(139,92,246,0.5)]`, `drop-shadow` on emoji or glowing pills → remove, depth from surface steps and hairlines
+- Ungrounded omnidirectional drop shadows (`0 0 24px rgba(0,0,0,...)` or `shadow-[0_0_...]` with `0` Y-offset) that float cards without a directional light source → dual-layer directional elevation (`0 1px 2px` contact + `0 4px 12px` ambient) in light mode, or surface steps + 1px hairlines in dark mode
 - Radial color washes or blurred blobs behind content → remove
 - Neon or high contrast colored borders → hairline at 6 to 10% opacity
 - Many near identical tints of the same hue for text, like five lavenders → three text roles from one neutral ramp
@@ -31,6 +32,7 @@ Go through every group and note each sign you find with where it lives. Each lin
 - Icons in many sizes and colors → one size, one stroke, text role color
 - Icons nudged off the column → same icon box width in every row
 - A sparkle ✨ for anything AI → remove or use a plain icon only where it explains something
+- Hallucinated inline `<svg><path d="..."/></svg>` geometry with LLM-invented bezier coordinates that produce asymmetric, non-grid-aligned, or self-intersecting icons → import named glyphs from the project's canonical icon library (Lucide, Phosphor, Heroicons, Radix)
 
 ## Spacing
 
@@ -78,6 +80,7 @@ Go through every group and note each sign you find with where it lives. Each lin
 
 - Glossy 3D blobs, orbs, liquid chrome shapes or a purple nebula as the hero visual → the product itself or one concrete metaphor for what it does
 - Stock robots, glowing brains, circuit lines or holograms for anything AI → remove, or show what the AI actually produces
+- Anthropomorphic mascots, blinking 3D avatars, or apologetic personality wrappers masking AI latency or tool errors in product UI → mechanical state row (step name, elapsed time, failure reason, rollback status, Retry/Undo)
 - Text, fake buttons or a fake logo baked into an image → real text in the page, a clean image without text
 - An image that does not blend into the page, with a hard edge and a different black → background matched to the page and a soft mask at the edges
 - A visual on every section → one visual where it helps, usually only the hero

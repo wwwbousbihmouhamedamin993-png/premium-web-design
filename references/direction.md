@@ -141,8 +141,11 @@ generation only when a linter can fail the build:
 
 - `stylelint-declaration-strict-value` on color, radius, and spacing declarations — raw hex, off-scale
   radii, and magic spacing fail CI (the same gate `tokens.md` expresses as greps).
-- ESLint `no-restricted-syntax` for the interaction bans the product adopts (e.g. `alert(`,
-  `confirm(`).
+- ESLint `no-restricted-syntax` and `no-restricted-imports` for interaction bans (`alert(`, `confirm(`)
+  **and shadow-primitive prevention**: ban raw `<button>`, `<input>`, `<select>`, and `<dialog>` JSX
+  elements (`JSXOpeningElement[name.name=/^(button|input|select|dialog)$/]`) outside `src/components/ui/**`
+  so coding agents cannot reconstruct ad-hoc "shadow components" with inline utility classes in feature
+  routes (`component-consistency.md`).
 - The `DESIGN.md` §1.4 invariant list names the rule that enforces each invariant. An invariant with
   no enforcing check is an aspiration, not an invariant.
 

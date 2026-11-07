@@ -150,6 +150,7 @@ writing none — every future session trusts the file.
    reviewer can then see the size of the job without running it.
 4. Report to the user: rules confirmed, drift found (with file paths), and the axes marked
    unresolved.
+5. Generate or refresh the project's `.agents/skills/design-review/SKILL.md` (`design-review-skill-template.md`), wire the contract line into `AGENTS.md`, and record the date in `DESIGN.md` §15.
 
 ## Not found
 

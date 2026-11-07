@@ -1,0 +1,80 @@
+{
+  "app": "cloudflare",
+  "category": "cloud",
+  "updatedAt": "2026-11-01T21:33:31.809Z",
+  "images": [
+    {
+      "file": "og.webp",
+      "surface": "og",
+      "source": "https://www.cloudflare.com/preview.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T21:33:31.809Z",
+      "note": "Homepage og:image 1400x800: white Cloudflare cloud logo on vivid orange halftone canvas, cream full-radius pill with maroon display headline (Start building). Confirms the marketing brand moment: orange canvas, pill CTA, chunky display face."
+    },
+    {
+      "file": "gh-preview.webp",
+      "surface": "gh-preview",
+      "source": "https://opengraph.githubassets.com/30e2af1ff06764598c02aa9a98f8c6e2fc6571be85aef814245d8e3e21cf953b/cloudflare/workers-sdk",
+      "verified": true,
+      "verifiedAt": "2026-11-01T21:33:31.809Z",
+      "note": "cloudflare/workers-sdk repo social preview 1200x600: orange gradient cloud mark on white, system-slab wordmark. Confirms logo gradient construction (#F6821F to #FBAD41)."
+    },
+    {
+      "file": "overview.webp",
+      "surface": "overview",
+      "source": "https://raw.githubusercontent.com/cloudflare/cloudflare-docs/production/src/assets/images/changelog/cloudflare-network-firewall/networking-overview-and-navigation.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T21:33:31.809Z",
+      "note": "Current dash Networking Overview (3000px downscaled to 1600): grouped sidebar (Protect & Connect), New/Beta outline pills, blue link-card grid, info banner with Learn more link, sentence-case headings. Confirms Standard-class overview layout and pill vocabulary."
+    },
+    {
+      "file": "dashboard.webp",
+      "surface": "dashboard",
+      "source": "https://raw.githubusercontent.com/cloudflare/cloudflare-docs/production/src/assets/images/changelog/dns/new-dns-ux.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T21:33:31.809Z",
+      "note": "Current dash DNS records grid (3706px downscaled to 1600): orange-cloud Proxied vs grey DNS-only toggles, blue Add record primary, Filter/Display options/Import/Export secondaries, Kbd search, important/team:API pill badges, recommendations tabs, dense 8-record table. Signature control evidence."
+    },
+    {
+      "file": "features.webp",
+      "surface": "features",
+      "source": "https://raw.githubusercontent.com/cloudflare/cloudflare-docs/production/src/assets/images/changelog/security-overview/overview-ui.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T21:33:31.809Z",
+      "note": "Current dash Security Overview (2026 dates): severity outline badges (Moderate), purple/blue dot category badges, action-item rows with hover action buttons, Monthly requests stat tile with orange/blue/teal stacked bar, orange-gradient Dashboard tour promo card (the sanctioned saturation moment), Detection tools list."
+    },
+    {
+      "file": "docs.webp",
+      "surface": "docs",
+      "source": "https://raw.githubusercontent.com/cloudflare/cloudflare-docs/production/src/assets/images/analytics/analytics-tab.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T21:33:31.809Z",
+      "note": "Network Analytics account dashboard: CLOUDFLARE wordmark header, sidebar with active Network Analytics fill, amber Beta pills, blue-outlined selected stat tile with sparkline, tabs, red Drop / blue Pass series, green toggle, Previous 24 hours select. Chart hue evidence."
+    },
+    {
+      "file": "pricing.webp",
+      "surface": "pricing",
+      "source": "https://raw.githubusercontent.com/cloudflare/cloudflare-docs/production/src/assets/images/fundamentals/get-started/change-plan.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T21:33:31.809Z",
+      "note": "Zone overview from the change-plan help flow (2023-era dash): Quick Actions list, Under Attack Mode / Development Mode toggles with helper copy, Plan Extensions links with 3 rules allowed meta, Free plan row with blue Change button. Plan-control microcopy evidence."
+    },
+    {
+      "file": "product.webp",
+      "surface": "product",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T21:33:31.809Z",
+      "note": "cloudflare.com homepage at 1440x900 viewport (2026): near-black chrome nav with white pill Login/Contact sales buttons and red Under attack? alert link, orange halftone hero, white two-line display headline, white pill Start building for free CTA. Marketing brand-moment evidence."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "Rejected: docs agent-setup screenshot cloudflare-mcp-list-available-zones.png — it shows a VS Code AI-chat window (MCP server demo), not Cloudflare dash UI.",
+    "Rejected for the overview surface: legacy-design zone overview from blog post A new look on your Cloudflare dashboard (2017-era blue icon-nav dash) — Cloudflare-verified but superseded by the current navigation capture.",
+    "Deleted after verification: dns/proxy-status-screenshot.png (canonical orange-cloud Proxied / grey DNS-only crop) — verified but duplicated the dashboard surface; the same toggle appears in dashboard.webp.",
+    "dash.cloudflare.com live capture not possible: unauthenticated request returns a 403 bot-challenge page; all dash surfaces sourced from first-party screenshots in the cloudflare/cloudflare-docs repo (production branch).",
+    "developers.cloudflare.com content pages embed no screenshot assets in their HTML shell; image inventory was enumerated via the GitHub git-trees API of the docs repo (1627 images scanned, 10 candidates fetched, 8 kept).",
+    "All images converted to webp; five dash captures exceeded 1600px width and were downscaled to 1600px (longest edge)."
+  ]
+}

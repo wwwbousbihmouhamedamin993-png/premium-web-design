@@ -1,6 +1,6 @@
-# Init — capture product truth in PRODUCT.md, derive DESIGN.md + an optional adapter, apply tokens
+# Init — capture product truth in PRODUCT.md, derive DESIGN.md + an optional adapter, apply tokens, generate the project's design-review skill
 
-`init` establishes the durable foundation of a logged-in B2B SaaS web product. Four deliverables:
+`init` establishes the durable foundation of a logged-in B2B SaaS web product. Six deliverables:
 
 1. **`PRODUCT.md`** — users, jobs, purpose, positioning, usage scene, constraints, brand. Web-specific:
    the **commercial model** (plans / seats / usage), **multi-tenancy** and **auth model**, because on
@@ -10,12 +10,19 @@
    light/dark strategy, density-mode strategy, a11y commitments, anti-patterns. No framework syntax.
 3. **`DESIGN-[framework].md`** — **optional**, only when the host has a stack to bind to.
 4. **Project source code** — generated tokens materialised into the project's real token source and
-   validated by its own typecheck/lint/build.
+   validated by its own typecheck/lint/build, plus a compact **Design System Contract** block wired into
+   the repo's root `AGENTS.md` / `CLAUDE.md` (when present) so downstream coding agents inherit the
+   canonical `DESIGN.md` path, `@/components/ui/*` import boundary, density class, and banned raw styling.
+5. **`.agents/skills/design-review/SKILL.md`** — a lightweight, project-native, diff-centric design
+   reviewer (invocable as `/design-review`) generated from the confirmed `DESIGN.md` at Phase 6. It runs
+   before any UI change ships: diff gate → deterministic mechanical lint → project invariant audit →
+   rendered verification → binary ship verdict. Full protocol: `design-review-skill-template.md`.
 
 These files are the single source of truth downstream. **Do not rush or cap the interview.** They are
 written to the project root per invocation — never cached or shared across projects. A fifth artifact —
 `design-system.html`, the **specimen** (Phase 5) — is disposable and derived from the applied tokens;
-it gates scope but is never a source of truth.
+it gates scope but is never a source of truth. The sixth — the design-review skill — is likewise
+derived, never a source of truth: it audits against `DESIGN.md` and regenerates whenever `DESIGN.md` changes.
 
 > **House process, not sourced fact.** Phase order, the A/B/C options and the adapter phase are this
 > skill's own process, adapted from `premium-mobile-design`'s `init`. Every CSS and WCAG fact below is
@@ -23,12 +30,13 @@ it gates scope but is never a source of truth.
 
 ## Communication protocol
 
-Kickoff banner before the first question: `[1/5] Product Truth → PRODUCT.md (users, plans, auth)` ·
-`[2/5] Design Specification → DESIGN.md` · `[3/5] Adapter (optional)` · `[4/5] Token Application →
-live CSS, wired` · `[5/5] Specimen Review → design-system.html confirmed`. State that it is
+Kickoff banner before the first question: `[1/6] Product Truth → PRODUCT.md (users, plans, auth)` ·
+`[2/6] Design Specification → DESIGN.md` · `[3/6] Adapter (optional)` · `[4/6] Token Application →
+live CSS, wired` · `[5/6] Specimen Review → design-system.html confirmed` · `[6/6] Review Skill →
+.agents/skills/design-review/SKILL.md generated`. State that it is
 deliberately thorough and takes multiple rounds. Phase headers:
-`─── [1/5] PRODUCT TRUTH ───`, `[2/5] DESIGN SPECIFICATION ───`, `[3/5] IMPLEMENTATION ADAPTER ───`,
-`[4/5] TOKEN APPLICATION & VALIDATION ───`, `[5/5] SPECIMEN REVIEW ───`, each with one sentence on
+`─── [1/6] PRODUCT TRUTH ───`, `[2/6] DESIGN SPECIFICATION ───`, `[3/6] IMPLEMENTATION ADAPTER ───`,
+`[4/6] TOKEN APPLICATION & VALIDATION ───`, `[5/6] SPECIMEN REVIEW ───`, `[6/6] DESIGN-REVIEW SKILL ───`, each with one sentence on
 what it decides. Every question carries one sentence of rationale: *"A per-seat plan turns seat count
 into a `Decide` surface, so cost and effective date must be legible before the click — a screen
 archetype, not a badge."*
@@ -41,8 +49,9 @@ Whenever `DESIGN.md` exists, ask before touching it:
 > **C — Re-interview.** Full Phase 2, replace the file. Use when product, plans or density model have
 > materially changed.
 
-**State matrix.** Neither exists → 1→2→3→4. Only `PRODUCT.md` → confirm, then 2→3→4. Only `DESIGN.md` →
+**State matrix.** Neither exists → 1→2→3→4→5→6. Only `PRODUCT.md` → confirm, then 2→3→4→5→6. Only `DESIGN.md` →
 ask A/B/C, run Phase 1 for `PRODUCT.md`, continue. Both, no adapter → ask A/B/C, generate if wanted.
+Both + specimen, no review skill → run Phase 6 only.
 All exist → ask what is stale; never overwrite a confirmed foundation without explicit intent.
 Incumbent UI with established tokens → offer `document` instead, running Phase 1 alongside it.
 
@@ -185,7 +194,12 @@ defaults must be overridden (a stock default inside a committed surface is a lap
    flag naming conflicts.
 4. **Wire the modes:** `<meta name="color-scheme">` before CSS; `color-scheme` on `:root`;
    `[data-theme]` attributes; persistence of the manual theme choice.
-5. **Validate** with the project's own typecheck/lint/build. Zero errors before exiting.
+5. **Wire the agent contract (`AGENTS.md` / `CLAUDE.md`).** If the repo root contains `AGENTS.md` or
+   `CLAUDE.md`, append or update a concise 10-line `## Design System Contract` block pointing every
+   coding agent to `DESIGN.md` (and `DESIGN-[framework].md` if present), the default density class,
+   the canonical `@/components/ui/*` primitive import rule (no raw `<button>`/`<input>`/`<select>`/`<dialog>`
+   shadow elements in feature routes), and the ban on raw hex, off-scale spacing, and undeclared glows.
+6. **Validate** with the project's own typecheck/lint/build. Zero errors before exiting.
 
 > **Canonical rule:** after Phase 4 the project's token files are canonical. Future token changes are
 > made in code and documented back into `DESIGN.md` — never by regenerating markdown over live code.
@@ -208,16 +222,27 @@ version:
   `init` project, no build command runs until the user confirms. Record
   `Specimen confirmed: YYYY-MM-DD` in `DESIGN.md` §15.
 
-## 8. Completion gate
+## 8. Phase 6 — generate the project's design-review skill
+
+Every later UI change in this project needs a reviewer that runs without this global skill being invoked. Generate it now, while the invariants are confirmed and fresh — full protocol in `design-review-skill-template.md`:
+
+- **One file:** `.agents/skills/design-review/SKILL.md` at the project root, model-invoked, < ~250 lines, written to the *Writing for Agents* standard (front-loaded trigger description, ordered steps each ending in a checkable completion criterion, leading words reused, positive phrasing, single source of truth pointing back at `DESIGN.md` sections — never copied rules).
+- **Content:** staleness stamp (hash of `DESIGN.md` at generation) → diff gate (`git diff` vs `origin/main`; no UI files → immediate exit) → Tier 1 deterministic mechanical checks over touched files → Tier 2 invariant audit against this project's `DESIGN.md` §1/§10/§12/§14 verbatim → Tier 3 rendered verification (headless Chromium, both modes, 320px, keyboard walk, axe, CLS) → severity table → binary verdict (`CHANGES REQUIRED` on any 🔴/🟠, else `APPROVED TO SHIP`).
+- **Wire it:** append the one contract line to the `AGENTS.md` Design System Contract block — *Before proposing or submitting changes to UI files, run `/design-review` and resolve all Blockers and Majors* — and record `Design-review skill generated: YYYY-MM-DD` in `DESIGN.md` §15.
+- **Regeneration rule:** any later `DESIGN.md` A/B/C patch or `document` regeneration refreshes the skill in the same session. A skill whose stamp mismatches `DESIGN.md` audits against a product that no longer exists.
+
+## 9. Completion gate
 
 Both documents written and confirmed; adapter written or explicitly declined; every `DESIGN.md` section
 populated — token architecture, spacing *and* density, component states, light/dark, density mode,
 a11y, anti-patterns; every contrast pairing **computed, not asserted, and unrounded**; tokens
 materialised, wired, 0 tooling errors; **specimen built, grep-clean, and confirmed by the user**;
+**design-review skill generated at `.agents/skills/design-review/SKILL.md`, stamp matching `DESIGN.md`,
+contract line wired**;
 files written to *this* project root. Then print the receipt:
 `PRODUCT.md` · `DESIGN.md` · `DESIGN-[framework].md` · `[token directory]` · `design-system.html
-(confirmed YYYY-MM-DD)` · `Tooling Status: 0 errors`
-→ *NEXT: run `$premium-web-design screen <name>`*.
+(confirmed YYYY-MM-DD)` · `.agents/skills/design-review/SKILL.md (generated YYYY-MM-DD)` · `Tooling Status: 0 errors`
+→ *NEXT: run `$premium-web-design screen <name>`; run `/design-review` before shipping any UI change.*
 
 ## Not found
 
@@ -245,4 +270,4 @@ All accessed 2026-10-05. Parenthetical = what the citation carries in this file.
 - **WCAG 2.2** — W3C / W3C WAI. (SC 2.1.1; SC 2.5.8 target size — 24x24 CSS px or the spacing exception, zoom does not excuse it, density control endorsed; SC 1.4.11 3:1 non-text contrast; SC 1.4.8 measure ceiling.) https://www.w3.org/TR/WCAG22/ · https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html · https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html · https://www.w3.org/WAI/WCAG22/Understanding/visual-presentation.html
 - **Typography: type sets** — Carbon Design System, IBM. (Productive 14px base vs expressive 16px base.) https://carbondesignsystem.com/elements/typography/type-sets/
 - **Visual Hierarchy in UX** — Nielsen Norman Group, Kelley Gordon, 2021-01-17. ("Do not rely only on color to communicate visual hierarchy.") https://www.nngroup.com/articles/visual-hierarchy-ux-definition/
-- Phase shape, A/B/C options, adapter phase, gate, `PRODUCT.md` schema — house process adapted from `premium-mobile-design` `references/init.md`.
+- Phase shape, A/B/C options, adapter phase, Phase 6 review-skill generation, gate, `PRODUCT.md` schema — house process adapted from `premium-mobile-design` `references/init.md`.

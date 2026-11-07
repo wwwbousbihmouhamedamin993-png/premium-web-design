@@ -152,6 +152,210 @@
         "dense-logs"
       ],
       "updatedAt": "2026-11-01T17:18:53.188Z"
+    },
+    {
+      "slug": "prisma",
+      "category": "backend",
+      "path": "design-systems/backend/prisma/DESIGN.md",
+      "posture": "committed",
+      "mood": "gradient,sharp,technical",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "five-hue-gradient",
+        "ink-cta",
+        "mono-identifiers",
+        "dual-parity",
+        "segmented-density"
+      ],
+      "updatedAt": "2026-11-01T20:58:07.125Z"
+    },
+    {
+      "slug": "supabase",
+      "category": "backend",
+      "path": "design-systems/backend/supabase/DESIGN.md",
+      "posture": "committed",
+      "mood": "charcoal,green,developer",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "brand-green-accent",
+        "dark-rooted",
+        "oklch-tokens",
+        "mono-identifiers",
+        "dense-tables"
+      ],
+      "updatedAt": "2026-11-01T20:58:07.237Z"
+    },
+    {
+      "slug": "turso",
+      "category": "backend",
+      "path": "design-systems/backend/turso/DESIGN.md",
+      "posture": "restrained",
+      "mood": "mint,dark,edge",
+      "density": "standard",
+      "theme": "dark",
+      "patterns": [
+        "dark-only",
+        "mint-accent",
+        "three-step-ramp",
+        "mono-identifiers",
+        "pixel-sampled"
+      ],
+      "updatedAt": "2026-11-01T20:58:07.343Z"
+    },
+    {
+      "slug": "aws",
+      "category": "cloud",
+      "path": "design-systems/cloud/aws/DESIGN.md",
+      "posture": "utilitarian",
+      "mood": "enterprise,dense,systematic",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "cloudscape-tokens",
+        "comfortable-compact-registers",
+        "dense-tables",
+        "hairline-separation",
+        "brand-orange-chrome"
+      ],
+      "updatedAt": "2026-11-01T22:26:06.197Z"
+    },
+    {
+      "slug": "azure",
+      "category": "cloud",
+      "path": "design-systems/cloud/azure/DESIGN.md",
+      "posture": "utilitarian",
+      "mood": "enterprise,blade,fluent",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "blade-navigation",
+        "fluent-tokens",
+        "portal-nav",
+        "dense-grids",
+        "segoe-ui"
+      ],
+      "updatedAt": "2026-11-01T22:26:06.448Z"
+    },
+    {
+      "slug": "cloudflare",
+      "category": "cloud",
+      "path": "design-systems/cloud/cloudflare/DESIGN.md",
+      "posture": "utilitarian",
+      "mood": "blue-verb,orange-brand,dense",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "kumo-system",
+        "brand-verb-split",
+        "oklch-tokens",
+        "dense-data",
+        "focused-destructive-flows"
+      ],
+      "updatedAt": "2026-11-01T22:26:06.698Z"
+    },
+    {
+      "slug": "digitalocean",
+      "category": "cloud",
+      "path": "design-systems/cloud/digitalocean/DESIGN.md",
+      "posture": "utilitarian",
+      "mood": "blue,pragmatic,developer",
+      "density": "standard",
+      "theme": "light",
+      "patterns": [
+        "official-tokens-endpoint",
+        "foam-teal-fenced",
+        "blue-accent",
+        "dense-tables",
+        "mono-log-identifiers"
+      ],
+      "updatedAt": "2026-11-01T23:08:02.512Z"
+    },
+    {
+      "slug": "fly",
+      "category": "cloud",
+      "path": "design-systems/cloud/fly/DESIGN.md",
+      "posture": "committed",
+      "mood": "violet,calm,technical",
+      "density": "standard",
+      "theme": "light",
+      "patterns": [
+        "violet-accent",
+        "lavender-canvas",
+        "fricolage-grotesque",
+        "mono-identifiers",
+        "dense-metrics"
+      ],
+      "updatedAt": "2026-11-01T23:08:02.746Z"
+    },
+    {
+      "slug": "gcp",
+      "category": "cloud",
+      "path": "design-systems/cloud/gcp/DESIGN.md",
+      "posture": "utilitarian",
+      "mood": "material,systematic,bright",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "material-shell",
+        "google-blue",
+        "product-color-quarantine",
+        "mono-queries",
+        "dense-logs"
+      ],
+      "updatedAt": "2026-11-01T23:08:02.974Z"
+    },
+    {
+      "slug": "hetzner",
+      "category": "cloud",
+      "path": "design-systems/cloud/hetzner/DESIGN.md",
+      "posture": "utilitarian",
+      "mood": "pragmatic,red-accent,compact",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "brand-red",
+        "console-token-extraction",
+        "montserrat-display",
+        "dense-tables",
+        "yellow-highlight"
+      ],
+      "updatedAt": "2026-11-02T00:19:26.105Z"
+    },
+    {
+      "slug": "linode",
+      "category": "cloud",
+      "path": "design-systems/cloud/linode/DESIGN.md",
+      "posture": "utilitarian",
+      "mood": "akamai-blue,systematic,sharp",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "zero-radius",
+        "design-language-system",
+        "nunito-sans",
+        "green-status-only",
+        "dense-consoles"
+      ],
+      "updatedAt": "2026-11-02T00:19:26.354Z"
+    },
+    {
+      "slug": "netlify",
+      "category": "cloud",
+      "path": "design-systems/cloud/netlify/DESIGN.md",
+      "posture": "utilitarian",
+      "mood": "teal,deploy-first,calm",
+      "density": "standard",
+      "theme": "adaptive",
+      "patterns": [
+        "facets-primitives",
+        "teal-action",
+        "marketing-quarantine",
+        "mono-log-lines",
+        "dense-deploys"
+      ],
+      "updatedAt": "2026-11-02T00:19:26.557Z"
     }
   ]
 }

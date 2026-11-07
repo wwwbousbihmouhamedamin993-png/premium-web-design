@@ -40,12 +40,29 @@ silently shipping it is the failure.
 
 **Four mechanical sweeps.** These catch most drift before a human does.
 
-**1. Duplicate implementations.**
+**1. Duplicate implementations and agent "shadow primitives".**
 ```
 rg -n 'function (Button|Card|Badge|Avatar|Modal)\b|const (Button|Card|Badge)\s*=' src/
+rg -n '<(button|input|select|dialog)\b' src/ --glob '!src/components/ui/**'
 ```
-Two components with the same role name and different markup are the standard failure. Merge, or
-delete one.
+Two components with the same role name and different markup are the standard human failure; coding
+agents fail one level lower by writing **shadow primitives** — raw `<button className="...">` or
+`<dialog>` tags with inline token/Tailwind reconstructions inside feature routes instead of importing
+from `@/components/ui/*`. Merge duplicate wrappers, and enforce the boundary mechanically in ESLint
+(scoped to `src/**/*.{tsx,jsx}`, ignoring `src/components/ui/**`):
+```json
+{
+  "rules": {
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "JSXOpeningElement[name.name=/^(button|input|select|dialog)$/]",
+        "message": "Import canonical primitives from @/components/ui/* instead of authoring raw shadow elements in feature routes."
+      }
+    ]
+  }
+}
+```
 
 **2. Radius spread.**
 ```

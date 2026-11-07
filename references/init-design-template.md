@@ -232,7 +232,7 @@ lists disabled and loading states. 7 Row, header, toolbar and pagination heights
 variant written for every authored motion. 9 Every control keyboard-reachable with a visible focus
 indicator. 10 Dark authored, not filtered, with border strength exceeding light's. 11 No unoverridden
 stock library default inside a committed surface. 12 Nothing came from a marketing page.
-13 The §9 brand-moment palette appears nowhere in the UI token layers.
+13 The §9 brand-moment palette appears nowhere in the UI token layers. 14 Specimen confirmed (YYYY-MM-DD). 15 Design-review skill generated (.agents/skills/design-review/SKILL.md, YYYY-MM-DD).
 ```
 
 ---

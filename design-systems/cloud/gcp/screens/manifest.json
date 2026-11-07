@@ -1,0 +1,83 @@
+{
+  "app": "gcp",
+  "category": "cloud",
+  "updatedAt": "2026-11-01T23:55:00Z",
+  "images": [
+    {
+      "file": "overview.png",
+      "surface": "overview",
+      "source": "browser-capture",
+      "url": "https://cloud.google.com/",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:45:00Z",
+      "note": "cloud.google.com homepage at 1440px viewport: Google Cloud logo mark, Google Sans display headline, blue pill CTA, dark promo cards (brand moment)"
+    },
+    {
+      "file": "product.png",
+      "surface": "product",
+      "source": "https://docs.cloud.google.com/bigquery/images/bq-studio-ui.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:43:00Z",
+      "note": "BigQuery Studio console UI from official docs: left icon rail, Explorer panel, blue outline chips, data table with tabular timestamps; downscaled 2145px to 1600px"
+    },
+    {
+      "file": "features.png",
+      "surface": "features",
+      "source": "browser-capture",
+      "url": "https://cloud.google.com/products",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:48:00Z",
+      "note": "cloud.google.com/products at 1440px viewport: product catalog cards with 16px radius, colored product icons, light blue wash band, dark navy pill CTA"
+    },
+    {
+      "file": "pricing.png",
+      "surface": "pricing",
+      "source": "browser-capture",
+      "url": "https://cloud.google.com/pricing",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:44:00Z",
+      "note": "cloud.google.com/pricing at 1440px viewport: blue filled + outlined pill CTAs, 64px Google Sans display numerals in green, blue links"
+    },
+    {
+      "file": "docs.png",
+      "surface": "docs",
+      "source": "https://docs.cloud.google.com/static/bigquery/images/web-query-split.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:46:00Z",
+      "note": "BigQuery console split-tab UI from official docs: schema table with grey column labels, blue RUN button, uppercase tab labels with blue active indicator"
+    },
+    {
+      "file": "dashboard.png",
+      "surface": "dashboard",
+      "source": "https://docs.cloud.google.com/static/logging/docs/images/logs-explorer-interface.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:42:00Z",
+      "note": "Logs Explorer console UI from official docs (dense data surface): white shell, blue Run query fill, LQL query editor, blue histogram, mono log rows with severity chips; downscaled 2770px to 1600px"
+    },
+    {
+      "file": "og.png",
+      "surface": "og",
+      "source": "https://cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:29:00Z",
+      "note": "cloud.google.com og:image / twitter:image: multicolor Google Cloud cloud mark on blue band"
+    },
+    {
+      "file": "gh-preview.png",
+      "surface": "gh-preview",
+      "source": "https://github.com/GoogleCloudPlatform.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:30:00Z",
+      "note": "GitHub org avatar for GoogleCloudPlatform: clean multicolor Google Cloud cloud mark; 460x460"
+    }
+  ],
+  "exhausted": false,
+  "notes": [
+    "Rejected: opengraph.githubassets.com/1/GoogleCloudPlatform preview returned a generic octocat image with no Google Cloud branding — deleted.",
+    "Rejected: console-tabs.png (docs.cloud.google.com/static/bigquery/images/console-tabs.png) verified as genuine console UI but dropped to keep one file per surface (docs surface already covered by web-query-split).",
+    "Rejected: /products and /pricing og:image duplicates the homepage social icon (same 1200x630 asset) — not re-downloaded.",
+    "Browser viewport screenshot surface timed out repeatedly (IAB under load from sibling panes); captures succeeded on retry per page. Full-page captures reduced to viewport captures after repeated fullPage timeouts.",
+    "Compute Engine create-instance and Cloud Storage console docs pages contain no embedded console screenshots (verified via rendered DOM); Cloud Logging and BigQuery docs supplied the real console UI images.",
+    "Real console.cloud.google.com pages require authentication, so console UI grounding comes from official docs screenshots (logs-explorer-interface.png, bq-studio-ui.png, web-query-split.png)."
+  ]
+}

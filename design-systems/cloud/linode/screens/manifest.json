@@ -1,0 +1,89 @@
+{
+  "app": "linode",
+  "category": "cloud",
+  "updatedAt": "2026-11-02T00:40:00Z",
+  "images": [
+    {
+      "file": "overview.jpg",
+      "surface": "overview",
+      "source": "https://github.com/linode/manager/pull/13549 (GitHub user-attachment, official Cloud Manager PR screenshot)",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:35:00Z",
+      "note": "Reserved IP Addresses landing screen, light mode: data table with zebra rows, tag chips, blue primary button, kebab row menus. Downscaled 2612px to 1400px."
+    },
+    {
+      "file": "dashboard.jpg",
+      "surface": "dashboard",
+      "source": "https://github.com/linode/manager/pull/13541 (GitHub user-attachment, official Cloud Manager PR screenshot)",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:35:00Z",
+      "note": "Dark-mode app shell: Akamai global header with product search, dark left sidebar (COMPUTE/STORAGE/NETWORKING/DATABASES), empty landing + right 'Reserve an IP Address' drawer with region select, tag input, price line, light-blue primary button with dark label. Downscaled 2968px to 1400px."
+    },
+    {
+      "file": "product.jpg",
+      "surface": "product",
+      "source": "https://github.com/linode/manager/pull/13586 (GitHub user-attachment, official Cloud Manager PR screenshot)",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:36:00Z",
+      "note": "Linodes/Create/One-Click Quick Deploy Apps marketplace, dark mode: app list (Ollama, Milvus, Deepseek), detail side panel, breadcrumb, tabs. Dev build behind browser chrome (localhost) — kept because the UI is unambiguously Cloud Manager."
+    },
+    {
+      "file": "features.jpg",
+      "surface": "features",
+      "source": "https://github.com/linode/manager/pull/13510 (GitHub user-attachment, official Cloud Manager PR screenshot)",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:36:00Z",
+      "note": "One-Click/cluster app card grid, light mode: white cards with light-gray fill, third-party logos in color, CLUSTER chips, blue info icon buttons."
+    },
+    {
+      "file": "empty-state.jpg",
+      "surface": "empty-state",
+      "source": "https://github.com/linode/manager/pull/13521 (GitHub user-attachment, official Cloud Manager PR screenshot)",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:36:00Z",
+      "note": "Reserved IPs empty landing state, light mode: green brand molecule icon in white circle, title + description, single blue primary CTA, Getting Started Guides links, Video Playlist link. Downscaled 2962px to 1400px."
+    },
+    {
+      "file": "dialog.jpg",
+      "surface": "dialog",
+      "source": "https://github.com/linode/manager/pull/13577 (GitHub user-attachment, official Cloud Manager PR screenshot)",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:37:00Z",
+      "note": "Dark-mode destructive confirmation 'Unreserve <IP>' over the data table: scrim, modal with Cancel + blue Unreserve, notification banner (Partner Referrals Beta) with info icon and Learn more link. Downscaled 2964px to 1400px."
+    },
+    {
+      "file": "drawer.jpg",
+      "surface": "drawer",
+      "source": "https://github.com/linode/manager/pull/13558 (GitHub user-attachment, official Cloud Manager PR screenshot)",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:37:00Z",
+      "note": "Dark-mode 'View shared image details' side panel: bold-label/regular-value pairs, region flag row, encrypted/cloud-init icon rows, Close link button."
+    },
+    {
+      "file": "form-select.jpg",
+      "surface": "form-select",
+      "source": "https://github.com/linode/manager/pull/13582 (GitHub user-attachment, official Cloud Manager PR screenshot)",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:38:00Z",
+      "note": "Light-mode form fragment: IP Address radio group (blue selected radio), 'Select a Reserved IP' select with italic placeholder and gray border, blue text link."
+    },
+    {
+      "file": "gh-preview.png",
+      "surface": "gh-preview",
+      "source": "https://opengraph.githubassets.com/1/linode/manager (deterministic fetch)",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:30:00Z",
+      "note": "GitHub repository social card for linode/manager: green Linode 3D cube logo + linode.com wordmark, 'The Akamai Cloud Manager' description. 1200x600 PNG."
+    }
+  ],
+  "exhausted": false,
+  "notes": [
+    "www.linode.com blocks non-browser clients (403 to curl and to the WebFetch text extractor); og:image/twitter:image could not be extracted from the homepage HTML.",
+    "Browser captures unavailable in this environment: the in-app browser screenshot surface timed out at its 3000ms cap on every attempt (including a trivial example.com control), so rung-2 ladder captures of linode.com homepage/products/pricing at 1440px were not possible.",
+    "Source actually used: PR screenshots from the open-source linode/manager repo (rung 2 artifacts — official product UI captured by the product team).",
+    "Rejected r7 (github user-attachment a4afc486): file was a QuickTime video, not an image.",
+    "Rejected r9 Glish console PR screenshot: oversized 2203px side-by-side dev-build comparison dominated by OS console content, not manager product surfaces.",
+    "cloud.linode.com SPA shell fetched and confirmed the product title 'Akamai Cloud Manager' plus pinned/collapsed side-menu widths (232px/48px); no screenshots available from the unauthenticated shell.",
+    "Pricing surface not captured: linode.com/pricing is behind the same 403 bot wall and no verified screenshot was found elsewhere."
+  ]
+}

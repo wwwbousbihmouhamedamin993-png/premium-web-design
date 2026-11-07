@@ -29,6 +29,7 @@ const CANDIDATES = [
   'docs/PRODUCT.md',
   'AGENTS.md',
   'CLAUDE.md',
+  '.agents/skills/design-review/SKILL.md',
   'docs/ui-polish-workflow.md',
 ];
 

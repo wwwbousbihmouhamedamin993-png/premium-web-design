@@ -1,0 +1,81 @@
+{
+  "app": "netlify",
+  "category": "cloud",
+  "updatedAt": "2026-11-02T00:45:00Z",
+  "images": [
+    {
+      "file": "overview.webp",
+      "surface": "overview",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:44:00Z",
+      "note": "netlify.com homepage at 1440px: dark navy canvas, teal spark wordmark, teal pill CTA, mono fetch bar, star mascot. Cookie banner visible bottom-left."
+    },
+    {
+      "file": "pricing.webp",
+      "surface": "pricing",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:44:00Z",
+      "note": "netlify.com/pricing at 1440px: Free/Personal/Pro(BEST VALUE, teal outline)/Enterprise plan cards on dark surface, teal price accents."
+    },
+    {
+      "file": "dashboard.webp",
+      "surface": "dashboard",
+      "source": "https://docs.netlify.com/images/site-deploys-deploy-log-deploy-preview-from-branch-deploy.png",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:40:00Z",
+      "note": "Netlify app deploys screen: top bar with Sites switcher, left sidebar (Deploys active in teal), summary card, search + filters, Trigger deploy split button, deploy rows with mono commit hashes. Page shown with backdrop dim from expanded preview row."
+    },
+    {
+      "file": "features.webp",
+      "surface": "features",
+      "source": "https://docs.netlify.com/images/site-deploys-ai-helps-fix-failed-deploys.png",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:40:00Z",
+      "note": "Deploy failure state with Why-did-it-fail AI diagnosis: red wash banner, light-teal AI button, deploy log panel, dark code block, Complete status pill."
+    },
+    {
+      "file": "product.webp",
+      "surface": "product",
+      "source": "https://docs.netlify.com/images/site-deploys-branch-deploys-enabled-for-specific-branches.png",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:40:00Z",
+      "note": "Site configuration form (Branches and deploy contexts): text input, radio group with teal selected dot, tag-token input with teal focus ring."
+    },
+    {
+      "file": "docs.webp",
+      "surface": "docs",
+      "source": "https://docs.netlify.com/images/site-deploys-deploy-log-selected-lines.png",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:40:00Z",
+      "note": "Deploy log surface: dark teal log canvas, mono log lines with teal line numbers, teal selection wash, teal-filled Preview button with white label."
+    },
+    {
+      "file": "og.webp",
+      "surface": "og",
+      "source": "https://www.netlify.com/images/og-image-default.png",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:20:00Z",
+      "note": "Official og:image: netlify wordmark + spark on navy-to-teal gradient with product icon bubbles."
+    },
+    {
+      "file": "gh-preview.webp",
+      "surface": "gh-preview",
+      "source": "https://github.com/netlify.png",
+      "verified": true,
+      "verifiedAt": "2026-11-02T00:20:00Z",
+      "note": "GitHub org avatar: white 'n' with bright teal spark rays on dark teal square."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "Rejected site-deploys-deploy-previews-netlify-drawer.png: pre-rebrand marketing page (blue Sign up button) dominates; drawer chrome is a thin strip; dated brand conflicts with current identity.",
+    "Rejected site-deploys-netlify-drawer-annotations.png: screenshot is mostly a third-party shop demo; Netlify chrome limited to a small toolbar; ambiguous product surface.",
+    "Rejected site-deploys-netlify-drawer-new-issue-markdown.png: GitHub issue composer inside the drawer with blurred user data; third-party UI dominates.",
+    "Rejected site-deploys-deploy-preview-git-example.png: shows GitHub UI, not Netlify product surface.",
+    "Rejected simplified-start-build-deploy-manage-extend-diagram.png: abstract 140px-tall diagram, not app UI.",
+    "Full-page homepage capture abandoned: marquee animation produced tiling artifacts in the capture surface; viewport capture used instead.",
+    "Rungs attempted for screenshots: 1 deterministic fetch (og:image, GitHub avatar), 2 docs.netlify.com embedded app-UI screenshots, 3 browser captures of netlify.com homepage and pricing."
+  ]
+}

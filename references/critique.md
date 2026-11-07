@@ -72,8 +72,8 @@ Flag any that are true:
 - [ ] Body text under 4.5:1, or large text / UI boundaries under 3:1 — computed ratios not rounded, so 4.499:1 fails [S9]
 - [ ] Dark canvas at pure black, or depth carried by drop shadows on a dark surface
 - [ ] Dark mode implemented as an inversion of light tokens — no separate surface ramp or border strength
-- [ ] Drop shadow on a dark-mode surface; glow or blur used as elevation
-- [ ] More than 2 font families, or icons mixing outline/filled with mismatched stroke weight
+- [ ] Drop shadow on a dark-mode surface; glow or blur used as elevation; ungrounded omnidirectional shadow (`0 0 24px rgba(...)` with `0` Y-offset) instead of dual-layer directional elevation
+- [ ] More than 2 font families, icons mixing outline/filled with mismatched stroke weight, or hallucinated inline `<svg><path d="..."/></svg>` geometry instead of canonical icon-library imports
 - [ ] Status carried by colour alone, with no icon, label, or shape
 
 **States & data**
@@ -116,9 +116,10 @@ Flag any that are true:
 
 Run against the changed code; each hit is a lead, not a verdict:
 
-- **Slop sweep (unslop):** `python <skill-base-dir>/scripts/unslop_grep.py <changed paths>` — the mechanical first pass over the AI-look signs (`unslop/signs.md`): purposeless loops, gradient text, purple-family gradients, glows, blobs, tracked-uppercase labels, heavy heading weights, pill radii, emoji decoration, hype words, greeting headlines, unverified claims, fake data. Exit 1 = findings.
+- **Slop sweep (unslop):** `python <skill-base-dir>/scripts/unslop_grep.py <changed paths>` — the mechanical first pass over the AI-look signs (`unslop/signs.md`): purposeless loops, gradient text, purple-family gradients, glows, ungrounded `0 0` shadows, hallucinated inline SVG paths, blobs, tracked-uppercase labels, heavy heading weights, pill radii, emoji decoration, hype words, greeting headlines, unverified claims, fake data. Exit 1 = findings.
 
 - Raw hex / `rgb(` / `hsl(` literals in component files (token bypass)
+- Ungrounded omnidirectional `box-shadow: 0 0` / `shadow-[0_0_` or ad-hoc inline `<path d="M..."` outside canonical icon components
 - `outline: none` or `outline: 0` without a `:focus-visible` rule in the same file
 - `@media` breakpoints inside a component that lives in a sidebar or split view (should be `@container`)
 - `font-variant-numeric` missing on a numeric table/list column

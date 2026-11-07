@@ -1,0 +1,73 @@
+{
+  "app": "turso",
+  "category": "backend",
+  "updatedAt": "2026-11-01T20:18:14Z",
+  "images": [
+    {
+      "file": "overview.webp",
+      "surface": "overview",
+      "source": "https://turso.tech/images/blog/we-built-a-brand-new-turso-web-app/usage.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:18:14Z",
+      "note": "Organization Overview tab: Usage stat tiles (Locations, Databases, Storage, Rows Read, Rows Written, Embedded Syncs) with mint progress bars, tab bar with mint active underline, Enterprise plan badge, avatar. Official Turso web-app launch post screenshot."
+    },
+    {
+      "file": "dashboard.webp",
+      "surface": "dashboard",
+      "source": "https://turso.tech/images/blog/we-built-a-brand-new-turso-web-app/database-overview.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:18:14Z",
+      "note": "Group page (default): stat cards (Primary LHR, Remote Replicas, Status Healthy badge, libSQL Version), Remote Replicas table with location row + remove affordance, Databases list rows with icon tiles and kebab menus, ghost buttons Create Database / Create Group Token."
+    },
+    {
+      "file": "product.webp",
+      "surface": "product",
+      "source": "https://turso.tech/images/blog/we-built-a-brand-new-turso-web-app/schema-database-overview.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:18:14Z",
+      "note": "Schema database detail (platforms-schema-database): Connect card with monochrome client language icons (TypeScript, Rust, Go, Python, PHP), Copy URL ghost button, child-databases list with hex identifiers, section header with description and action."
+    },
+    {
+      "file": "features.webp",
+      "surface": "features",
+      "source": "https://turso.tech/images/blog/we-built-a-brand-new-turso-web-app/create-token-with-attach-permissions.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:18:14Z",
+      "note": "Create Database Token dialog: icon medallion, Expires select, Access segmented control (Read & Write selected with mint border), Read ATTACH Permissions scrollable checkbox list, Cancel ghost + Create Token filled primary button."
+    },
+    {
+      "file": "pricing.webp",
+      "surface": "pricing",
+      "source": "https://turso.tech/images/blog/we-built-a-brand-new-turso-web-app/plan-details.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:18:14Z",
+      "note": "Plan Details card: Current Plan row with Enterprise pill badge, Timeline and Billing Cycle rows, Overages toggle, Change Plan mint-text button on dark-green pill."
+    },
+    {
+      "file": "og.webp",
+      "surface": "og",
+      "source": "https://turso.tech/opengraph-image.png?8abb64b5fd9d7c60",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:18:14Z",
+      "note": "Official turso.tech Open Graph image: Turso bull logo + wordmark in mint on near-black navy, headline 'The next evolution of SQLite'. Downscaled 2400px to 1600px."
+    },
+    {
+      "file": "gh-preview.webp",
+      "surface": "gh-preview",
+      "source": "https://github.com/tursodatabase/turso (repository social preview)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:18:14Z",
+      "note": "GitHub social preview for tursodatabase/turso: mint bull avatar on dark rounded square, repo name, description 'A SQL database in Rust: SQLite-compatible... The LLVM of databases.'"
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "All dashboard screenshots come from Turso's own launch post 'We built a brand new Turso web app!' (turso.tech/blog) — first-party product evidence for app.turso.tech.",
+    "Rejected: database-switcher.png (same blog post) — image failed to decode in two independent viewers; unverifiable, deleted.",
+    "Verified as authentic Turso UI but not retained (no free surface slot; one file per surface rule): team-management.png, invoices.png, revoke-invite.png (destructive red #e5484d confirmed here), billing-email.png (input + Save pattern), schema-vs-regular-database-icons.png (icon fragment), cover.png (brand mascot cover).",
+    "docs.turso.tech checked (libsql/client-access, cloud/introduction): pages embed only logo SVGs via mintcdn.com, no dashboard UI screenshots — docs surface left empty.",
+    "Browser-capture rung not needed: deterministic fetches yielded 7 verified images, above the 3-image floor.",
+    "Pixel sampling (sharp) of the dashboard screenshots grounded the DESIGN.md palette: canvas #0d1317, card #141a1e, hairline #25323c/#283945, secondary ink #a2b7c6, primary ink #e9eff3, mint accents #4ff8d2/#14e0b9/#1ed8a4, filled control #3ab59a, destructive #e5484d.",
+    "Fonts confirmed from app.turso.tech compiled CSS: Inter (UI, next/font with Inter Fallback) and IBM Plex Mono (loaded as --font-ibm-plex-mono). turso.tech additionally ships Geist Mono for marketing code styling."
+  ]
+}

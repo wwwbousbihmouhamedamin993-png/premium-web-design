@@ -1,0 +1,65 @@
+{
+  "app": "hetzner",
+  "category": "cloud",
+  "updatedAt": "2026-11-02T01:20:00Z",
+  "images": [
+    {
+      "file": "overview.png",
+      "surface": "overview",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-02T01:18:00Z",
+      "note": "hetzner.com/cloud at 1440x900 viewport. HETZNER wordmark, red nav accent, Montserrat display headline, red primary CTA, 'Made in Germany' benefits row. Cookie-consent dialog and location-switcher overlay parts of the hero; capture retained because brand typography and accent usage are fully visible."
+    },
+    {
+      "file": "dashboard.png",
+      "surface": "dashboard",
+      "source": "https://docs.hetzner.com/static/fddf0399a514252e3657770352f0aba8/c1b63/dashboard.servers.en.png",
+      "verified": true,
+      "verifiedAt": "2026-11-02T01:12:00Z",
+      "note": "Hetzner Cloud Console dashboard, dark mode, 1200x580, from official docs (creating-a-server). Shows console shell: HETZNER Console wordmark, dark sidebar with PINNED/CLOUD/NETWORKING/STORAGE groups, red 'Create Resource' primary button, Ctrl+K search, world-map, empty-state panels."
+    },
+    {
+      "file": "product.png",
+      "surface": "product",
+      "source": "https://docs.hetzner.com/static/979ee308cdc28a3a73e36386bd372c02/c1b63/create-server-en.png",
+      "verified": true,
+      "verifiedAt": "2026-11-02T01:12:00Z",
+      "note": "Create-a-server flow, dark mode, 1200x602, from official docs. Plan radio cards (Cost-Optimized / Regular Performance / General Purpose with 'Limited availability' badge), architecture toggle, location cards with country flags, red step-progress rail, sticky right rail with step checklist and TOTAL price."
+    },
+    {
+      "file": "features.png",
+      "surface": "features",
+      "source": "https://docs.hetzner.com/static/8db8b80404515b0d0951b5d5d26d9824/c1b63/add-servers.png",
+      "verified": true,
+      "verifiedAt": "2026-11-02T01:12:00Z",
+      "note": "Servers empty state, 1200x340, from official docs: server-rack glyph, Montserrat headline 'You don't have any servers yet.', helper line, red 'Add Server' primary CTA — grounds the text-first empty-state policy."
+    },
+    {
+      "file": "og.png",
+      "surface": "og",
+      "source": "https://www.hetzner.com/_resources/themes/hetzner/images/favicons/ms-icon-144x144.png",
+      "verified": true,
+      "verifiedAt": "2026-11-02T01:12:00Z",
+      "note": "144x144 site brand tile (white H on brand red). hetzner.com publishes no og:image/twitter:image on its homepage or /cloud; the msapplication tile is the site's canonical brand image."
+    },
+    {
+      "file": "gh-preview.png",
+      "surface": "gh-preview",
+      "source": "https://avatars.githubusercontent.com/u/22154697?s=280&v=4",
+      "verified": true,
+      "verifiedAt": "2026-11-02T01:12:00Z",
+      "note": "github.com/hetznercloud org preview, 280x280: HETZNER wordmark reversed on official brand red (#d50c2d print / #d50c2e in-product)."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "Rung 1 (deterministic): hetzner.com homepage HTML contains no og:image/twitter:image; msapplication tile captured instead. GitHub org avatar captured.",
+    "Rung 2 (browser captures): overview.png captured at 1440x900. Full-page captures and the pricing page (hetzner.com/cloud/cost-optimized) repeatedly failed with 'screenshot surface preparation timed out' — the marketing site's WebGL hero defeats the capture surface and the shared in-app browser had 12+ sibling tabs rendering; two fresh-tab first-shot attempts also failed.",
+    "Rung 2 (docs images): three real console-UI screenshots downloaded at 1200px width from docs.hetzner.com/cloud/servers/getting-started/creating-a-server/ and verified; all other scanned docs pages (managing-servers, console, volumes, load-balancers, firewalls, networks, projects, DNS) embed no images.",
+    "Rung 3 (web search): 'Hetzner Cloud console screenshot' candidates were all marketing/pricing-table pages or third-party articles without clearly-Hetzner console UI images; none downloaded to avoid wrong-product risk.",
+    "Pricing surface: no verified screenshot; prices observed in product.png (EUR total rail) and cost values cross-checked against official cost-optimized plans page.",
+    "All images reviewed visually; no rejections required — every download showed Hetzner wordmark or authentic console UI on first inspection.",
+    "All files are PNG, max width 1440px (below the 1600px downscale threshold); webp preferred but not required."
+  ]
+}

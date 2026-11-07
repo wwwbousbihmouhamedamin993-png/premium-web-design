@@ -1,0 +1,84 @@
+{
+  "app": "fly",
+  "category": "cloud",
+  "updatedAt": "2026-11-01T23:02:10Z",
+  "images": [
+    {
+      "file": "overview.webp",
+      "surface": "overview",
+      "source": "https://global.discourse-cdn.com/fly1/original/3X/e/6/e61097aa0503cd6b7fbc5c5017b738c00b032b2f.webp (embedded in official fly.io changelog post /changelog/managed-postgres-v2-cluster-overview/)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:02:10Z",
+      "note": "Managed Postgres cluster Overview page: stat tiles with uppercase labels + 28px tabular values + violet sparklines, status pill, region chip, Connect (violet filled) + Scale buttons, Environment & Plan card with $282 USD cost. Downscaled 3548px to 1600px."
+    },
+    {
+      "file": "dashboard.webp",
+      "surface": "dashboard",
+      "source": "https://global.discourse-cdn.com/fly1/original/3X/1/9/191f61504e7e20ddee5dc5bc35724fce91056e5f.png (embedded in official fly.io changelog post /changelog/dashboard-app-settings/)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:02:10Z",
+      "note": "fly.toml Configuration page: sidebar with violet selected pill, tabs with underline, Deployment strategy select, Release command form, green Deployed status pill, lavender gradient canvas."
+    },
+    {
+      "file": "product.webp",
+      "surface": "product",
+      "source": "https://global.discourse-cdn.com/fly1/original/3X/6/1/61e54eea54c5244dc16009fd71d7c2c7078d6e9e.jpeg (embedded in official fly.io changelog post /changelog/dashboard-app-settings/)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:02:10Z",
+      "note": "Machines list with Process group drawer: indigo drawer header, machines table (mono IDs, v8 version chips, flag+GRU region chips, shared-cpu-1x@256MB sizes), Cancel/Save footer."
+    },
+    {
+      "file": "features.webp",
+      "surface": "features",
+      "source": "https://global.discourse-cdn.com/fly1/original/3X/0/1/01746ac51188ce1c00a1eda65fe94fb8efd04dd5.jpeg (embedded in official fly.io changelog post /changelog/machine-cordon-lease-status/)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:02:10Z",
+      "note": "Machine detail page: icon action toolbar (restart/stop/clone/terminal/metrics), State (Started, green dot), Region (ORD flag chip), Fragment Mono image ref/IP/version fields, Cordon Status and Lease rows."
+    },
+    {
+      "file": "pricing.webp",
+      "surface": "pricing",
+      "source": "https://global.discourse-cdn.com/fly1/original/3X/b/2/b269df1de24e49bcde14598157458a66554d71da.png (embedded in official fly.io changelog post /changelog/find-billing-page/)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:02:10Z",
+      "note": "Billing page (per-organization billing chooser): org avatar tiles on violet gradient, mono account IDs, violet filled 'Check billing →' buttons."
+    },
+    {
+      "file": "docs.webp",
+      "surface": "docs",
+      "source": "https://mintcdn.com/fly-io/v-XOGeVK6s4rQ-4y/images/docs-island.webp (fly.io/docs hero illustration)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:02:10Z",
+      "note": "Docs landing hero watercolor illustration (island, balloons, sun) — Fly's official brand art style used across marketing/docs. Downscaled 2235px to 1600px."
+    },
+    {
+      "file": "og.webp",
+      "surface": "og",
+      "source": "https://fly.io/phx/images/og/home-4cf42f21380e4ba29cd5791d1029c101.jpg (fly.io homepage og:image)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:02:10Z",
+      "note": "Official homepage og card: Fly.io wordmark + purple balloon logo, Mackinac serif headline, dusk purple gradient, watercolor illustration, white pill Sign up CTA."
+    },
+    {
+      "file": "gh-preview.webp",
+      "surface": "gh-preview",
+      "source": "https://opengraph.githubassets.com/04c2c0ed43c68041df6ac0a0230767280f68ce999647b9024edcedb739d77e0b/superfly/flyctl (github.com/superfly/flyctl social preview)",
+      "verified": true,
+      "verifiedAt": "2026-11-01T23:02:10Z",
+      "note": "superfly/flyctl GitHub social preview card: purple balloon app icon on violet gradient rounded square, repo stats. Confirms brand mark and violet gradient."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "Ladder rung 1 (sibling marketing/mobile catalogs): no fly spec existed — missed.",
+    "Ladder rung 2: official fly.io production stylesheet extracted (app-*.css) for the primitive palette (violet ramp #7C3AED family, ink ramp #281950 family, gradient wash pair #F5F3FF/#EEF2FF, night dev-tools set #0F0A20, status washes) and the self-hosted type stack (Fricolage Grotesque, Mackinac, Fragment Mono); community.fly.io threads (Nov 2025, Sep 2026) confirmed the dashboard ships light-only with no official dark mode.",
+    "Ladder rung 3: 20 screenshots downloaded from official sources (fly.io changelog posts embedding the Fly Discourse CDN, fly.io/docs Mintlify CDN, fly.io og:image, GitHub og preview); 8 verified across the 8 manifest surfaces.",
+    "Rejected cand-bg1.png + cand-bg2.png (Activity feed and scale-plan banner fragments — dashboard/product surfaces already covered).",
+    "Rejected cand-billing1.png (account settings sidebar fragment) and cand-billing3.png (account dropdown fragment) — too small, duplicate surfaces.",
+    "Rejected cand-corr1.png + cand-corr2.png (embedded Grafana metrics views, 2876px) — third-party Grafana chrome, not Fly-authored UI; metrics surface family already documented in DESIGN.md as guest surfaces.",
+    "Rejected cand-django.webp + cand-laravel.webp + cand-docmain.png (framework-guide watercolor illustrations) — docs surface already covered by docs.webp; redundant art.",
+    "Rejected cand-repo.png ('Change my repository' card fragment) — dashboard surface already covered by dashboard.webp.",
+    "Browser captures (fly.io homepage/docs/pricing at 1440px) not needed: deterministic fetches yielded 8 verified images, one per surface, exceeding the 3-image floor.",
+    "All images converted to webp (quality 88) and downscaled to max 1600px width where larger; each image visually verified via the Read tool before and after conversion."
+  ]
+}

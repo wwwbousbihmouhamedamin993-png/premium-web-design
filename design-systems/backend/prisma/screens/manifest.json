@@ -1,0 +1,95 @@
+{
+  "app": "prisma",
+  "category": "backend",
+  "updatedAt": "2026-11-01T20:54:06Z",
+  "images": [
+    {
+      "file": "overview.webp",
+      "surface": "overview",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:45:00Z",
+      "note": "prisma.io homepage full page (1440px, segment-stitched because the site's pinned scroll scenes break native full-page capture). Shows 2026 brand: paper-texture canvas, Sora hero, black pill CTA with gradient ring, five-hue stripe, logo strip, product cards, pricing teaser, testimonials, FAQ, footer."
+    },
+    {
+      "file": "pricing.webp",
+      "surface": "pricing",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:52:00Z",
+      "note": "Usage-based pricing surface: banner, Sora headline, four plan cards (Free 0, Starter 10 most-popular with warm gradient border, Pro 49, Business 129), teal check bullets, custom-pricing strip. Cropped to the fully-rendered region; below-fold reveal animations left later bands unrendered in every capture pass."
+    },
+    {
+      "file": "docs.webp",
+      "surface": "docs",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:58:00Z",
+      "note": "prisma.io/docs landing, dark-authored: ORM 8 announcement banner, Ctrl-K search pill, Ask AI, dark sidebar (Start/Build/Deploy/Manage), rainbow-gradient Build/Deploy panels with cyan docs links."
+    },
+    {
+      "file": "auth.webp",
+      "surface": "auth",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:38:00Z",
+      "note": "console.prisma.io login (Prisma Console): dark textured canvas, Sora 'Welcome back' card, GitHub/Google OAuth buttons, teal links, hue-coded testimonial cards, five-hue stripe."
+    },
+    {
+      "file": "dashboard.webp",
+      "surface": "dashboard",
+      "source": "https://www.prisma.io/changelog/2026-10-02-console-agents.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:40:00Z",
+      "note": "Real Prisma Console workspace (Agents page, Oct 2026): light textured canvas, workspace/project sidebar, agents data table with uppercase mono headers and ACTIVE/PAUSED/REVOKED status badges, pending-approval cards, black 'Enroll agent' pill, 'Ask AI' float. Downscaled 2720px to 1600px."
+    },
+    {
+      "file": "features.webp",
+      "surface": "features",
+      "source": "https://www.prisma.io/changelog/2026-08-28-console-compute-usage.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:40:00Z",
+      "note": "Real console App usage analytics (dark): stat tiles with tabular numerals, cyan/orange chart lines, uppercase tracked labels, series legend dots (teal/amber/red), 'TOTAL REQUESTS 54' hero numeral."
+    },
+    {
+      "file": "product.webp",
+      "surface": "product",
+      "source": "https://www.prisma.io/product/console-get-started.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:40:00Z",
+      "note": "Real console get-started onboarding (light): 'How would you like to start?' path cards with mint washes and teal borders, green 'Install Prisma on GitHub' CTA (legacy-accent remnant noted in DESIGN.md), mono CLI command, FREE workspace badge. Downscaled 1850px to 1600px."
+    },
+    {
+      "file": "onboarding.webp",
+      "surface": "onboarding",
+      "source": "https://www.prisma.io/changelog/2026-08-28-console-new-project.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T20:40:00Z",
+      "note": "Real console 'Set up your project' form (dark): template card with teal icon, uppercase mono 'OR SET UP MANUALLY' divider, project-name field with mono slug, region select, red required asterisk."
+    },
+    {
+      "file": "og.webp",
+      "surface": "og",
+      "source": "https://www.prisma.io/og.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T18:31:00Z",
+      "note": "prisma.io og:image/twitter:image, deterministic fetch. Current brand: multicolor prism mark, Sora-style headline 'Your TypeScript app, from prompt to production', five-hue diagonal stripe."
+    },
+    {
+      "file": "gh-preview.webp",
+      "surface": "gh-preview",
+      "source": "https://github.com/prisma/prisma",
+      "verified": true,
+      "verifiedAt": "2026-11-01T18:31:00Z",
+      "note": "GitHub repo social preview (pre-seeded fetch, verified visually). Legacy brand: dark navy, concentric teal triangle lines, 'Next-generation ORM for TypeScript & Node.js', green CTA."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "console.prisma.io/seo-banner.jpeg ('Prisma Data Platform' banner, legacy teal identity) was downloaded and verified as authentic but deleted: it duplicates the og surface already covered by og.png/og.webp, and one file per surface is required. Its legacy dark-navy + teal reading is recorded in DESIGN.md sections 1, 9 and 14 as superseded.",
+    "Marketing feature photography (foggy meadow cabin, rainbow-lit forest from the 2026 art direction) was found and inspected; not included in screens/ because they are decorative section backgrounds, not product screenshots; their role is specified in DESIGN.md section 9.",
+    "prisma.io full-page captures were segment-stitched from viewport screenshots because native full-page capture repeats the site's pinned scroll-jacked hero; pricing below-fold sections rely on scroll reveals that never fully fired, so pricing.webp was cropped to the fully-rendered band.",
+    "Docs article pages (accelerate, pulse, orm setup) contain no embedded product-UI screenshots in 2026 (code-block only), verified by scanning page HTML and DOM images; real console UI evidence came instead from the official docs-repo changelog/product images served on prisma.io.",
+    "All four console UI screenshots were VIEW-verified (Prisma Console wordmark/logo, product UI matching console.prisma.io surfaces) before conversion; og/gh-preview/auth/dashboard/features/product/onboarding verified pre-conversion, overview/pricing/docs verified from stitched previews."
+  ]
+}

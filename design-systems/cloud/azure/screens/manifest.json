@@ -1,0 +1,73 @@
+{
+  "app": "azure",
+  "category": "cloud",
+  "updatedAt": "2026-11-01T22:22:38Z",
+  "images": [
+    {
+      "file": "overview.webp",
+      "surface": "overview",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T22:55:00Z",
+      "note": "azure.microsoft.com/en-us homepage at 1440x900 (viewport capture; full-page capture glitched on lazy sections). Microsoft | Azure header, blue CTA, hero. Grounds marketing ink/CTA blues."
+    },
+    {
+      "file": "features.webp",
+      "surface": "features",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T22:55:00Z",
+      "note": "Homepage 'Products and services' section: category pills (selected chip deep blue #025797, default chip light-blue wash), white product cards radius 8. Grounds card/pill families."
+    },
+    {
+      "file": "product.webp",
+      "surface": "product",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T22:55:00Z",
+      "note": "azure.microsoft.com/en-us/products: dark hero with product icon collage, light-grey category sidebar, blue text links. Grounds link blue and marketing navy hero."
+    },
+    {
+      "file": "pricing.webp",
+      "surface": "pricing",
+      "source": "browser-capture",
+      "verified": true,
+      "verifiedAt": "2026-11-01T22:55:00Z",
+      "note": "azure.microsoft.com/en-us/pricing: primary CTA #0078D4 sampled, outlined secondary button, dark navy AI band #00355E sampled. Grounds accent pair and navy quarantine."
+    },
+    {
+      "file": "dashboard.webp",
+      "surface": "dashboard",
+      "source": "https://learn.microsoft.com/en-us/azure/azure-portal/media/azure-portal-overview/portal-callouts.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T22:55:00Z",
+      "note": "Official docs screenshot of portal.azure.com VM overview blade: blue top bar (pixel-sampled #0078D3), global search G+/, Copilot pill, command bar, service menu with #EDEBE9 selected row, Essentials key-value panel, metric tiles. Primary spec grounding."
+    },
+    {
+      "file": "docs.webp",
+      "surface": "docs",
+      "source": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/media/manage-resource-groups-portal/manage-resource-groups-list-groups.png",
+      "verified": true,
+      "verifiedAt": "2026-11-01T22:55:00Z",
+      "note": "Official docs screenshot: Resource groups list blade — compact grid (~28-32px rows), filter chips with blue wash, disabled 'Assign tags' command, pagination, row overflow menus. Grounds dense table surface."
+    },
+    {
+      "file": "gh-preview.webp",
+      "surface": "gh-preview",
+      "source": "https://avatars.githubusercontent.com/u/6844498?s=280&v=4",
+      "verified": true,
+      "verifiedAt": "2026-11-01T22:55:00Z",
+      "note": "GitHub org og:image (deterministic fetch) — official Azure logo wordmark 'A'. 280px PNG converted to webp."
+    }
+  ],
+  "exhausted": true,
+  "notes": [
+    "No og:image/twitter:image is published anywhere on azure.microsoft.com (homepage, /products, /pricing, /blog, /free all checked; twitter:card=summary with no image). The 'og' surface has no verifiable official asset and was omitted rather than shipped unverified.",
+    "Rejected: CDN homepage background '3229800-Products-Background-1600x1088' (nearly-empty gradient, no Azure branding) — deleted after visual verification failed.",
+    "Rejected: '3229800-Accordion-Img01-800x513' and '3517412-Solutions-1-3-800x513' (generic Microsoft stock photos, no Azure branding).",
+    "Rejected: github.com/Azure/azure-quickstart-templates og:image (repository-images URL served an HTML challenge, not the image).",
+    "Ladder rung 1 missed: no azure spec exists in marketing or mobile sibling catalogs (confirmed by orchestrator brief).",
+    "Full-page browser capture of the homepage produced repeated-section artifacts (sticky header x lazy-load); replaced with clean 1440x900 viewport captures.",
+    "All marketing captures are browser-captures at 1440px viewport; docs captures are official learn.microsoft.com media downloads; all images viewed and brand-verified, all webp, none wider than 1600px."
+  ]
+}
